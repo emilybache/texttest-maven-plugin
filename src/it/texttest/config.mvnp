@@ -1,0 +1,23 @@
+# Full path to the System Under Test (or Java Main Class name)
+executable:/usr/local/bin/mvn
+
+default_checkout:texttest-maven-plugin
+
+# Naming scheme to use for files for stdin,stdout and stderr
+filename_convention_scheme:standard
+
+create_catalogues:true
+
+copy_test_path:myapp
+copy_test_path:texttest_home
+
+# Expanded name to use for application
+full_name:TextTest Maven Plugin
+
+[run_dependent_text]
+stdout:Total time: [\d.\w]+{REPLACE Total time: <time>}
+stdout:Finished at: [\d.\w\s:]+{REPLACE Finished at: <datestamp>}
+stdout:Final Memory: [\w\d\/]+{REPLACE Final Memory: <memory>}
+stdout:loading:
+stdout:{INTERNAL writedir}
+[end]

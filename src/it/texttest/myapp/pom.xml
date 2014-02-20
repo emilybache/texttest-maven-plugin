@@ -1,0 +1,30 @@
+<project>
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>example</groupId>
+    <artifactId>myapp</artifactId>
+    <version>1.0-SNAPSHOT</version>
+
+    <name>Sample Project using TextTest Plugin</name>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.texttest</groupId>
+                <artifactId>texttest-maven-plugin</artifactId>
+                <version>1.0-SNAPSHOT</version>
+                <configuration>
+                    <appName>myapp</appName>
+                </configuration>
+                <executions>
+                    <execution>
+                        <phase>pre-integration-test</phase>
+                        <goals>
+                            <goal>install-texttests</goal>
+                        </goals>
+                    </execution>
+                 </executions>
+            </plugin>
+        </plugins>
+    </build>
+</project>
