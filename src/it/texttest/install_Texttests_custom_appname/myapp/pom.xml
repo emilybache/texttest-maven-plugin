@@ -13,6 +13,9 @@
                 <groupId>org.texttest</groupId>
                 <artifactId>texttest-maven-plugin</artifactId>
                 <version>1.0-SNAPSHOT</version>
+                <configuration>
+                    <appName>foobar</appName>
+                </configuration>
                 <executions>
                     <execution>
                         <phase>pre-integration-test</phase>

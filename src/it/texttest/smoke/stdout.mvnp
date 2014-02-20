@@ -43,7 +43,9 @@ texttest-maven-plugin:help
       The maximum length of a display line, should be positive.
 
 texttest-maven-plugin:install-texttests
-  Description: (no description available)
+  Description: This maven plugin will set up your texttests so they can be
+    run by Maven. It attaches to the pre-integration-test lifecycle phase where
+    it installs your tests under TEXTTEST_HOME, and set the classpath
   Implementation: org.texttest.InstallTextTestsMojo
   Language: java
   Bound to phase: pre-integration-test
@@ -51,21 +53,21 @@ texttest-maven-plugin:install-texttests
   Available parameters:
 
     appName
-      Required: true
       User property: install-texttests.appName
-      The short name of the texttest app - ie the file extension of the config
-      file.
+      The short name of the texttest app - ie the file extension of the
+      texttest config file. Defaults to the artifactId of this maven project.
 
     shouldInstallGlobally
       User property: install-texttests.globalInstall
-      Whether to install the texttests under the global TEXTTEST_HOME folder.
-      Defaults to true - ie they will be installed globally.
+      Whether to install the texttests globally by putting a link to them under
+      the $TEXTTEST_HOME folder. Defaults to true - ie they will be installed
+      there.
 
 
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 1.701s
-[INFO] Finished at: Thu Feb 20 13:35:50 CET 2014
-[INFO] Final Memory: 11M/310M
+[INFO] Total time: 2.160s
+[INFO] Finished at: Thu Feb 20 17:33:38 CET 2014
+[INFO] Final Memory: 9M/245M
 [INFO] ------------------------------------------------------------------------

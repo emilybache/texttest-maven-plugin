@@ -1,3 +1,4 @@
 smoke
 install_Texttests
 install_Texttests_Locally
+install_Texttests_custom_appname
