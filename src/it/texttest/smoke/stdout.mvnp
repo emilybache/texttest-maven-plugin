@@ -55,19 +55,18 @@ texttest-maven-plugin:install-texttests
     appName
       User property: install-texttests.appName
       The short name of the texttest app - ie the file extension of the
-      texttest config file. Defaults to the artifactId of this maven project.
+      texttest config file. Defaults to the artifactId of your project.
 
     shouldInstallGlobally
       User property: install-texttests.globalInstall
       Whether to install the texttests globally by putting a link to them under
-      the $TEXTTEST_HOME folder. Defaults to true - ie they will be installed
-      there.
+      the $TEXTTEST_HOME folder. Defaults to true
 
 
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 2.160s
-[INFO] Finished at: Thu Feb 20 17:33:38 CET 2014
-[INFO] Final Memory: 9M/245M
+[INFO] Total time: 1.883s
+[INFO] Finished at: Fri Feb 21 08:33:40 CET 2014
+[INFO] Final Memory: 10M/245M
 [INFO] ------------------------------------------------------------------------

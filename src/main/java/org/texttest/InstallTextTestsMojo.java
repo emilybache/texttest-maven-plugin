@@ -24,14 +24,14 @@ public class InstallTextTestsMojo extends AbstractMojo {
 
 
     /**
-     * The enclosing project.
+     * The enclosing Maven project.
      */
     @Parameter( defaultValue = "${project}", readonly = true )
     protected MavenProject project;
 
     /**
      * Whether to install the texttests globally by putting a link to them under the $TEXTTEST_HOME folder.
-     * Defaults to true - ie they will be installed there.
+     * Defaults to true
      */
     @Parameter(property = "install-texttests.globalInstall")
     private boolean shouldInstallGlobally = true;
