@@ -21,5 +21,5 @@ stdout:Total time: [\d.\w]+{REPLACE Total time: <time>}
 stdout:Finished at: [\d.\w\s:]+{REPLACE Finished at: <datestamp>}
 stdout:Final Memory: [\w\d\/]+{REPLACE Final Memory: <memory>}
 stdout:loading:
-stdout:{INTERNAL writedir}
+stdout:{INTERNAL writedir}{REPLACE <sandbox>}
 [end]

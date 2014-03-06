@@ -24,7 +24,7 @@ export TEXTTEST_TMP=${SANDBOX}
 # We're making sure that if we kill this script, that the texttest process is also killed
 trap : SIGTERM SIGINT
 
-texttest.py -b all -a ${APP_NAME}  -c ${DIR}
+texttest.py -b all -a ${APP_NAME} -c ${DIR}
 exitcode=$?
 TEXTTEST_PID=$!
 wait $TEXTTEST_PID

@@ -1,4 +1,3 @@
-smoke
-install_Texttests
-install_Texttests_Locally
-install_Texttests_custom_appname
+# Check the texttest maven goal has good help text.
+helptext
+install_texttests

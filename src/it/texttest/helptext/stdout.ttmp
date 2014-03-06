@@ -1,0 +1,61 @@
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Sample Project using TextTest Plugin 1.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-help-plugin:2.2:describe (default-cli) @ myapp ---
+[INFO] org.texttest:texttest-maven-plugin:1.0-SNAPSHOT
+
+Name: TextTest Maven Plugin
+Description: (no description available)
+Group Id: org.texttest
+Artifact Id: texttest-maven-plugin
+Version: 1.0-SNAPSHOT
+Goal Prefix: texttest
+
+This plugin has 1 goal:
+
+texttest:install-texttests
+  Description: This maven plugin will set up your texttests so they can be
+    run by Maven.
+  Implementation: org.texttest.InstallTextTestsMojo
+  Language: java
+
+  Available parameters:
+
+    addClasspathToTestEnvironment (Default: true)
+      User property: add_classpath
+      Whether to add the classpath to texttest's environment file for this
+      application. If you're testing an application on the JVM this is usually
+      needed.
+
+    appName (Default: ${artifactId})
+      User property: app_name
+      The short name of the texttest app - ie the file extension of the
+      texttest config file. Defaults to the artifactId of your project.
+
+    installGlobally (Default: false)
+      User property: install_globally
+      Whether to install the texttests globally by putting a softlink to them
+      under the 'texttest_root' folder. If you set this to true then you must
+      also specify 'texttest_root' Defaults to false
+
+    texttestRoot
+      User property: texttest_root
+      The path to TEXTTEST_ROOT - ie where the texttest runner will find your
+      test cases. If the parameter 'install_globally' is set to true, then this
+      must be set, and is expected to be a global location on your machine
+      where you may have many test suites installed. If you don't set this
+      value, we use the environment variable $TEXTTEST_ROOT If that is not set,
+      we will use the environment variable $TEXTTEST_HOME as a fallback option.
+      If neither are set, we use ${basedir}/src/it/texttest
+
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 1.468s
+[INFO] Finished at: Thu Mar 06 14:02:35 CET 2014
+[INFO] Final Memory: 11M/310M
+[INFO] ------------------------------------------------------------------------

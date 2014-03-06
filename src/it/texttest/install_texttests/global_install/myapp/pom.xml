@@ -15,7 +15,7 @@
                 <version>1.0-SNAPSHOT</version>
                 <configuration>
                     <texttestRoot>${TEXTTEST_SANDBOX}/texttest_home</texttestRoot>
-
+                    <installGlobally>true</installGlobally>
                 </configuration>
             </plugin>
         </plugins>

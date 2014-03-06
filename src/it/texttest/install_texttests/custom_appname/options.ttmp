@@ -1,0 +1,1 @@
+-Dapp_name=foobar -Dinstall_globally=true org.texttest:texttest-maven-plugin:install-texttests

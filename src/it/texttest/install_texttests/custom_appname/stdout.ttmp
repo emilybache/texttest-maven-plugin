@@ -5,11 +5,11 @@
 [INFO] ------------------------------------------------------------------------
 [INFO] 
 [INFO] --- texttest-maven-plugin:1.0-SNAPSHOT:install-texttests (default-cli) @ myapp ---
-[INFO] Installing TextTests under TEXTTEST_HOME /Users/emilyb/texttest with folder name myapp
+[INFO] Will install texttests globally with name foobar under TEXTTEST_ROOT /Users/emilyb/.texttest/tmp/ttmp.06Mar142120.71017/ttmp/install_texttests/custom_appname/texttest_home
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 0.444s
-[INFO] Finished at: Thu Mar 06 11:47:39 CET 2014
-[INFO] Final Memory: 6M/245M
+[INFO] Total time: 0.844s
+[INFO] Finished at: Thu Mar 06 14:21:24 CET 2014
+[INFO] Final Memory: 8M/310M
 [INFO] ------------------------------------------------------------------------

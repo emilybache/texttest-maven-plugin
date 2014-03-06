@@ -1,0 +1,1 @@
+help:describe -Ddetail -Dplugin=org.texttest:texttest-maven-plugin

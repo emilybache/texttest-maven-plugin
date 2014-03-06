@@ -5,11 +5,10 @@
 [INFO] ------------------------------------------------------------------------
 [INFO] 
 [INFO] --- texttest-maven-plugin:1.0-SNAPSHOT:install-texttests (default-cli) @ myapp ---
-[INFO] Installing TextTests under TEXTTEST_HOME /Users/emilyb/texttest with folder name myapp
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 0.446s
-[INFO] Finished at: Thu Mar 06 11:47:39 CET 2014
-[INFO] Final Memory: 6M/245M
+[INFO] Total time: 0.539s
+[INFO] Finished at: Thu Mar 06 13:49:38 CET 2014
+[INFO] Final Memory: 8M/310M
 [INFO] ------------------------------------------------------------------------
