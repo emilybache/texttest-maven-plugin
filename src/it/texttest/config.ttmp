@@ -1,18 +1,20 @@
 # Full path to the System Under Test (or Java Main Class name)
-executable:/usr/local/bin/mvn
+executable:${TEXTTEST_CHECKOUT}/src/test/sh/run_mvn.sh
 
 default_checkout:texttest-maven-plugin
 
 # Naming scheme to use for files for stdin,stdout and stderr
 filename_convention_scheme:standard
 
+# Expanded name to use for application
+full_name:TextTest Maven Plugin
+
+import_config_file:jenkins-texttest.conf
+
 create_catalogues:true
 
 copy_test_path:myapp
 copy_test_path:texttest_home
-
-# Expanded name to use for application
-full_name:TextTest Maven Plugin
 
 [run_dependent_text]
 stdout:Total time: [\d.\w]+{REPLACE Total time: <time>}
