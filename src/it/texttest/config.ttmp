@@ -16,10 +16,15 @@ create_catalogues:true
 copy_test_path:myapp
 copy_test_path:texttest_home
 
+[collate_file]
+classpath:myapp/target/classes/classpath.txt
+[end]
+
 [run_dependent_text]
 stdout:Total time: [\d.\w]+{REPLACE Total time: <time>}
 stdout:Finished at: [\d.\w\s:]+{REPLACE Finished at: <datestamp>}
 stdout:Final Memory: [\w\d\/]+{REPLACE Final Memory: <memory>}
 stdout:loading:
 stdout:{INTERNAL writedir}{REPLACE <sandbox>}
+classpath:.*\/\.m2\/repository{REPLACE <m2 repository>}
 [end]

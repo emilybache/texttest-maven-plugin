@@ -3,27 +3,48 @@ package org.texttest;
 import org.apache.maven.plugin.AbstractMojo;
 import org.apache.maven.plugin.MojoExecutionException;
 import org.apache.maven.plugin.MojoFailureException;
-import org.apache.maven.plugins.annotations.Mojo;
+import org.apache.maven.plugins.annotations.*;
+
+import org.apache.maven.execution.MavenSession;
+import org.apache.maven.plugin.AbstractMojo;
+import org.apache.maven.plugin.BuildPluginManager;
+import org.apache.maven.plugins.annotations.Component;
 import org.apache.maven.plugins.annotations.Parameter;
+import org.apache.maven.project.MavenProject;
 
 import org.apache.maven.project.MavenProject;
 
+import java.io.File;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 
+import static org.twdata.maven.mojoexecutor.MojoExecutor.*;
+
 /**
  * This maven plugin will set up your texttests so they can be run by Maven.
  */
-@Mojo(name = "install-texttests")
+@Mojo(name = "install-texttests", requiresDependencyResolution = ResolutionScope.COMPILE_PLUS_RUNTIME)
 public class InstallTextTestsMojo extends AbstractMojo {
 
     /**
-     * The enclosing Maven project.
+     * The project currently being built.
      */
-    @Parameter( defaultValue = "${project}", readonly = true )
-    protected MavenProject project;
+    @Parameter(required=true, readonly = true, defaultValue = "${project}")
+    protected MavenProject mavenProject;
+
+    /**
+     * The current Maven session.
+     */
+    @Parameter(required=true, readonly=true, defaultValue = "${session}")
+    protected MavenSession mavenSession;
+
+    /**
+     * The Maven BuildPluginManager component.
+     */
+    @Component
+    protected BuildPluginManager pluginManager;
 
     /**
      * Whether to install the texttests globally by putting a softlink to them under the 'texttest_root' folder.
@@ -49,28 +70,31 @@ public class InstallTextTestsMojo extends AbstractMojo {
      * If you're testing an application on the JVM this is usually needed.
      */
     @Parameter(property="add_classpath", defaultValue = "true")
-    private boolean addClasspathToTestEnvironment;
+    private boolean addClasspathToTextTestEnvironment;
 
     /**
      * The short name of the texttest app - ie the file extension of the texttest config file.
      * Defaults to the artifactId of your project.
      */
-    @Parameter(property="app_name", defaultValue = "${artifactId}")
+    @Parameter(property="app_name", defaultValue = "${project.artifactId}")
     private String appName;
 
     @Override
     public void execute() throws MojoExecutionException, MojoFailureException {
-
-        if (appName == null) {
-            appName = project.getArtifactId();
-        }
         Path texttestRootPath = getTexttestRootPath();
         if (installGlobally) {
             getLog().info("Will install texttests globally with name " + appName + " under TEXTTEST_ROOT " + texttestRootPath);
             installUnderTexttestHome(appName, texttestRootPath);
         }
-        //String classesDir = project.getBuild().getOutputDirectory();
-        //String testsDir = project.getBuild().getTestOutputDirectory();
+
+        if (addClasspathToTextTestEnvironment) {
+            String classesDir = mavenProject.getBuild().getOutputDirectory();
+            executeMojo(
+                    plugin(groupId("org.apache.maven.plugins"), artifactId("maven-dependency-plugin"), version("2.8")),
+                    goal("build-classpath"),
+                    configuration(element(name("outputFile"), new File(classesDir).toPath().resolve("classpath.txt").toString())),
+                    executionEnvironment(mavenProject, mavenSession, pluginManager));
+        }
 
     }
 
@@ -115,7 +139,7 @@ public class InstallTextTestsMojo extends AbstractMojo {
     }
 
     Path getWhereTheTestsAreInThisMavenProject() {
-        return project.getBasedir().toPath().resolve(Paths.get("src/it/texttest"));
+        return mavenProject.getBasedir().toPath().resolve(Paths.get("src/it/texttest"));
     }
 
 

@@ -24,13 +24,13 @@ texttest:install-texttests
 
   Available parameters:
 
-    addClasspathToTestEnvironment (Default: true)
+    addClasspathToTextTestEnvironment (Default: true)
       User property: add_classpath
       Whether to add the classpath to texttest's environment file for this
       application. If you're testing an application on the JVM this is usually
       needed.
 
-    appName (Default: ${artifactId})
+    appName (Default: ${project.artifactId})
       User property: app_name
       The short name of the texttest app - ie the file extension of the
       texttest config file. Defaults to the artifactId of your project.
@@ -55,7 +55,7 @@ texttest:install-texttests
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 1.468s
-[INFO] Finished at: Thu Mar 06 14:02:35 CET 2014
+[INFO] Total time: 2.242s
+[INFO] Finished at: Thu Mar 06 14:29:45 CET 2014
 [INFO] Final Memory: 11M/310M
 [INFO] ------------------------------------------------------------------------

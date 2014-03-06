@@ -5,11 +5,13 @@
 [INFO] ------------------------------------------------------------------------
 [INFO] 
 [INFO] --- texttest-maven-plugin:1.0-SNAPSHOT:install-texttests (default-cli) @ myapp ---
-[INFO] Will install texttests globally with name myapp under TEXTTEST_ROOT /Users/emilyb/.texttest/tmp/ttmp.06Mar141922.70880/ttmp/install_texttests/global_install/texttest_home
+[INFO] Will install texttests globally with name myapp under TEXTTEST_ROOT /Users/emilyb/.texttest/tmp/ttmp.06Mar144514.73147/ttmp/install_texttests/global_install/texttest_home
+[INFO] No dependencies found.
+[INFO] Wrote classpath file '/Users/emilyb/.texttest/tmp/ttmp.06Mar144514.73147/ttmp/install_texttests/global_install/myapp/target/classes/classpath.txt'.
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 0.340s
-[INFO] Finished at: Thu Mar 06 14:19:24 CET 2014
-[INFO] Final Memory: 6M/245M
+[INFO] Total time: 3.571s
+[INFO] Finished at: Thu Mar 06 14:45:21 CET 2014
+[INFO] Final Memory: 15M/310M
 [INFO] ------------------------------------------------------------------------

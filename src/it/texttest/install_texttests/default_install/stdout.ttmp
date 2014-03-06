@@ -5,10 +5,11 @@
 [INFO] ------------------------------------------------------------------------
 [INFO] 
 [INFO] --- texttest-maven-plugin:1.0-SNAPSHOT:install-texttests (default-cli) @ myapp ---
+[INFO] Wrote classpath file '/Users/emilyb/.texttest/tmp/ttmp.06Mar144514.73147/ttmp/install_texttests/default_install/myapp/target/classes/classpath.txt'.
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 0.539s
-[INFO] Finished at: Thu Mar 06 13:49:38 CET 2014
-[INFO] Final Memory: 8M/310M
+[INFO] Total time: 3.491s
+[INFO] Finished at: Thu Mar 06 14:45:21 CET 2014
+[INFO] Final Memory: 15M/310M
 [INFO] ------------------------------------------------------------------------
