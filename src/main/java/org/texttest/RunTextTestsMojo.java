@@ -38,7 +38,6 @@ public class RunTextTestsMojo extends AbstractTextTestMojo {
 
         Path textTestExecutable = findTextTestOnPath();
         if (textTestExecutable == null) {
-            getLog().debug("texttest.py was not found on the PATH, will extract it from maven dependency");
             executeMojo(
                     plugin(groupId("org.apache.maven.plugins"), artifactId("maven-dependency-plugin"), version("2.8")),
                     goal("unpack"),
@@ -61,12 +60,12 @@ public class RunTextTestsMojo extends AbstractTextTestMojo {
         String PATH = System.getenv("PATH");
         for (String pathDir: PATH.split(System.getProperty("path.separator"))) {
             Path possibleLocation = new File(pathDir).toPath().resolve("texttest.py");
-            getLog().debug("checking location: " + possibleLocation);
             if (Files.exists(possibleLocation)) {
-                getLog().debug("found texttest on PATH at location: " + possibleLocation);
+                getLog().info("found texttest on PATH at location: " + possibleLocation);
                 return possibleLocation;
             }
         }
+        getLog().info("texttest.py not found on PATH " + PATH);
         return null;
     }
 

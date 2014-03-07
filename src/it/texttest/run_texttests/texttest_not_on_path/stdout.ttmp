@@ -1,0 +1,18 @@
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Sample Project using TextTest Plugin 1.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- texttest-maven-plugin:1.0-SNAPSHOT:run-texttests (default-cli) @ myapp ---
+[INFO] texttest.py not found on PATH /Users/emilyb/.texttest/tmp/ttmp.07Mar132537.89543/ttmp/run_texttests/texttest_not_on_path:/Library/Frameworks/Python.framework/Versions/2.7/bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin
+[INFO] Configured Artifact: org.texttest:texttest-runner:2.26:jar
+[INFO] Unpacking /Users/emilyb/.m2/repository/org/texttest/texttest-runner/2.26/texttest-runner-2.26.jar to /Users/emilyb/.texttest/tmp/ttmp.07Mar132537.89543/ttmp/run_texttests/texttest_not_on_path/myapp/target/dependency with includes "" and excludes ""
+[INFO] Could not read application 'myapp'. No file named config.myapp was found under /Users/emilyb/.texttest/tmp/ttmp.07Mar132537.89543/ttmp/run_texttests/texttest_not_on_path/texttest_home.
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 8.179s
+[INFO] Finished at: Fri Mar 07 13:25:51 CET 2014
+[INFO] Final Memory: 14M/245M
+[INFO] ------------------------------------------------------------------------

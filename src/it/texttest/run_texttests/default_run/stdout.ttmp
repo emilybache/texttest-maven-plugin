@@ -5,13 +5,19 @@
 [INFO] ------------------------------------------------------------------------
 [INFO] 
 [INFO] --- texttest-maven-plugin:1.0-SNAPSHOT:run-texttests (default-cli) @ myapp ---
-[INFO] Configured Artifact: org.texttest:texttest-runner:2.26:jar
-[INFO] Unpacking /Users/emilyb/.m2/repository/org/texttest/texttest-runner/2.26/texttest-runner-2.26.jar to /Users/emilyb/.texttest/tmp/ttmp.07Mar123129.86653/ttmp/run_texttests/default_run/myapp/target/dependency with includes "" and excludes ""
-[INFO] Could not read application 'myapp'. No file named config.myapp was found under /Users/emilyb/.texttest/tmp/ttmp.07Mar123129.86653/ttmp/run_texttests/default_run/texttest_home.
+[INFO] found texttest on PATH at location: /Users/emilyb/.profile.d/bin/texttest.py
+[INFO] Could not read application 'myapp'. No file named config.myapp was found under /Users/emilyb/.texttest/tmp/ttmp.07Mar132537.89543/ttmp/run_texttests/default_run/texttest_home.
 [INFO] ------------------------------------------------------------------------
-[INFO] BUILD SUCCESS
+[INFO] BUILD FAILURE
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 5.012s
-[INFO] Finished at: Fri Mar 07 12:31:38 CET 2014
-[INFO] Final Memory: 17M/310M
+[INFO] Total time: 6.839s
+[INFO] Finished at: Fri Mar 07 13:25:49 CET 2014
+[INFO] Final Memory: 13M/310M
 [INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.texttest:texttest-maven-plugin:1.0-SNAPSHOT:run-texttests (default-cli) on project myapp: There were test failures -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException
