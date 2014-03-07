@@ -6,14 +6,14 @@
 [INFO] 
 [INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ myapp ---
 [WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
-[INFO] skip non existing resourceDirectory /Users/emilyb/.texttest/tmp/ttmp.07Mar132537.89543/ttmp/whole_lifecycle/python_tests_passing/myapp/src/main/resources
+[INFO] skip non existing resourceDirectory /Users/emilyb/.texttest/tmp/ttmp.07Mar135356.90919/ttmp/whole_lifecycle/python_tests_passing/myapp/src/main/resources
 [INFO] 
 [INFO] --- maven-compiler-plugin:2.5.1:compile (default-compile) @ myapp ---
 [INFO] No sources to compile
 [INFO] 
 [INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ myapp ---
 [WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
-[INFO] skip non existing resourceDirectory /Users/emilyb/.texttest/tmp/ttmp.07Mar132537.89543/ttmp/whole_lifecycle/python_tests_passing/myapp/src/test/resources
+[INFO] skip non existing resourceDirectory /Users/emilyb/.texttest/tmp/ttmp.07Mar135356.90919/ttmp/whole_lifecycle/python_tests_passing/myapp/src/test/resources
 [INFO] 
 [INFO] --- maven-compiler-plugin:2.5.1:testCompile (default-testCompile) @ myapp ---
 [INFO] No sources to compile
@@ -23,25 +23,23 @@
 [INFO] 
 [INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ myapp ---
 [WARNING] JAR will be empty - no content was marked for inclusion!
-[INFO] Building jar: /Users/emilyb/.texttest/tmp/ttmp.07Mar132537.89543/ttmp/whole_lifecycle/python_tests_passing/myapp/target/myapp-1.0-SNAPSHOT.jar
+[INFO] Building jar: /Users/emilyb/.texttest/tmp/ttmp.07Mar135356.90919/ttmp/whole_lifecycle/python_tests_passing/myapp/target/myapp-1.0-SNAPSHOT.jar
 [INFO] 
 [INFO] --- texttest-maven-plugin:1.0-SNAPSHOT:install-texttests (install-texttests) @ myapp ---
-[INFO] Will install texttests globally with name myapp under TEXTTEST_ROOT /Users/emilyb/.texttest/tmp/ttmp.07Mar132537.89543/ttmp/whole_lifecycle/python_tests_passing/texttest_home
-[INFO] No dependencies found.
-[INFO] Wrote classpath file '/Users/emilyb/.texttest/tmp/ttmp.07Mar132537.89543/ttmp/whole_lifecycle/python_tests_passing/myapp/target/classes/classpath.txt'.
+[INFO] Will install texttests globally with name myapp under TEXTTEST_ROOT /Users/emilyb/.texttest/tmp/ttmp.07Mar135356.90919/ttmp/whole_lifecycle/python_tests_passing/texttest_home
 [INFO] 
 [INFO] --- texttest-maven-plugin:1.0-SNAPSHOT:run-texttests (run-texttests) @ myapp ---
 [INFO] found texttest on PATH at location: /Users/emilyb/.profile.d/bin/texttest.py
-[INFO] 2014-03-07 13:25:51,464 - Using local queues for Application MyApp, checkout /Users/emilyb/.texttest/tmp/ttmp.07Mar132537.89543/ttmp/whole_lifecycle/python_tests_passing/myapp
-[INFO] 2014-03-07 13:25:51,468 - Q: Submitting MyApp test-case hello to default local queue
-[INFO] 2014-03-07 13:25:51,657 - S: MyApp test-case hello succeeded on Emilys-MacBook-Pro.local
-[INFO] 2014-03-07 13:25:51,658 - Results:
-[INFO] 2014-03-07 13:25:51,658 - 
-[INFO] 2014-03-07 13:25:51,658 - Tests Run: 1
+[INFO] 2014-03-07 13:54:02,880 - Using local queues for Application MyApp, checkout /Users/emilyb/.texttest/tmp/ttmp.07Mar135356.90919/ttmp/whole_lifecycle/python_tests_passing/myapp
+[INFO] 2014-03-07 13:54:02,884 - Q: Submitting MyApp test-case hello to default local queue
+[INFO] 2014-03-07 13:54:03,162 - S: MyApp test-case hello succeeded on Emilys-MacBook-Pro.local
+[INFO] 2014-03-07 13:54:03,163 - Results:
+[INFO] 2014-03-07 13:54:03,163 - 
+[INFO] 2014-03-07 13:54:03,163 - Tests Run: 1
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 9.603s
-[INFO] Finished at: Fri Mar 07 13:25:52 CET 2014
-[INFO] Final Memory: 16M/240M
+[INFO] Total time: 4.498s
+[INFO] Finished at: Fri Mar 07 13:54:03 CET 2014
+[INFO] Final Memory: 16M/310M
 [INFO] ------------------------------------------------------------------------

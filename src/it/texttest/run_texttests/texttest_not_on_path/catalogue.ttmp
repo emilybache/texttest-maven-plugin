@@ -329,3 +329,5 @@ The following new files/directories were created:
 --------------------texttestve2.nsi
 ------------dependency-maven-plugin-markers
 ----------------org.texttest-texttest-runner-jar-2.26.marker
+------------texttest_extra_config
+----------------environment.myapp

@@ -32,11 +32,16 @@ public abstract class AbstractTextTestMojo extends AbstractMojo {
     protected BuildPluginManager pluginManager;
 
     /**
-     * The short name of the texttest app - ie the file extension of the texttest config file.
-     * Defaults to the artifactId of your project.
+     * The short name of the texttest application under test - ie the file extension of the texttest config file.
      */
     @Parameter(property="app_name", defaultValue = "${project.artifactId}")
     protected String appName;
+
+    /**
+     * Where the texttests for this project are located - ie the folder where config.appName is found.
+     */
+    @Parameter(property="texttest_location", defaultValue = "${basedir}/src/it/texttest")
+    protected String texttestLocation;
 
     /**
      * The path to TEXTTEST_ROOT - ie where the texttest runner will find your test cases.
@@ -44,7 +49,7 @@ public abstract class AbstractTextTestMojo extends AbstractMojo {
      * to be a global location on your machine where you may have many test suites installed.
      * If you don't set this value, we use the environment variable $TEXTTEST_ROOT
      * If that is not set, we will use the environment variable $TEXTTEST_HOME as a fallback option.
-     * If neither are set, we use ${basedir}/src/it/texttest
+     * If neither are set, we use the value of 'texttestLocation' as a last resort.
      */
     @Parameter(property="texttest_root")
     private String texttestRoot;
@@ -59,11 +64,9 @@ public abstract class AbstractTextTestMojo extends AbstractMojo {
             }
         }
 
-        return getWhereTheTestsAreInThisMavenProject();
+        return Paths.get(texttestLocation);
     }
 
-    Path getWhereTheTestsAreInThisMavenProject() {
-        return mavenProject.getBasedir().toPath().resolve(Paths.get("src/it/texttest"));
-    }
+
 
 }

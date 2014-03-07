@@ -5,8 +5,15 @@
     <artifactId>myapp</artifactId>
     <version>1.0-SNAPSHOT</version>
 
-    <name>Sample Project with Python tests using TextTest Plugin</name>
+    <name>Sample Project with Java tests using TextTest Plugin</name>
 
+    <dependencies>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.8.2</version>
+        </dependency>
+    </dependencies>
     <profiles>
         <profile>
             <id>run-its</id>
@@ -19,7 +26,6 @@
                         <configuration>
                             <texttestRoot>${TEXTTEST_SANDBOX}/texttest_home</texttestRoot>
                             <installGlobally>true</installGlobally>
-                            <addClasspathToTextTestEnvironment>false</addClasspathToTextTestEnvironment>
                         </configuration>
                         <executions>
                             <execution>

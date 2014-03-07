@@ -17,7 +17,7 @@ copy_test_path:myapp
 copy_test_path:texttest_home
 
 [collate_file]
-classpath:myapp/target/classes/classpath.txt
+classpath:myapp/target/texttest_extra_config/environment.myapp
 [end]
 
 [run_dependent_text]
@@ -29,7 +29,8 @@ stdout:{INTERNAL writedir}{REPLACE <sandbox>}
 stdout:\d+-\d+-\d+ \d+:\d+:\d+,\d+{REPLACE <timestamp>}
 stdout:succeeded on [\w\d\.-]+{REPLACE succeeded on <machine_name>}
 stdout:FAILED on [\w\d\.-]+{REPLACE FAILED on <machine_name>} 
-classpath:.*\/\.m2\/repository{REPLACE <m2 repository>}
+classpath:{INTERNAL writedir}{REPLACE <sandbox>}
+classpath::.*\.m2\/repository{REPLACE :<m2 repository>}
 catalogue:texttest\.py{->}texttest-texttest-runner-jar-.*marker
 catalogue:-*myapp\..*
 [end]

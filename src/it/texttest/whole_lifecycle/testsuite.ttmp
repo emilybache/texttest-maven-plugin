@@ -3,3 +3,9 @@ python_tests_failing
 
 # Build a python project with tests that pass
 python_tests_passing
+
+# Build a java project with tests that fail
+java_tests_failing
+
+# Build a java project with tests that pass
+java_tests_passing

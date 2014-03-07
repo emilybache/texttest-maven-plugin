@@ -19,6 +19,7 @@
                         <configuration>
                             <texttestRoot>${TEXTTEST_SANDBOX}/texttest_home</texttestRoot>
                             <installGlobally>true</installGlobally>
+                            <addClasspathToTextTestEnvironment>false</addClasspathToTextTestEnvironment>
                         </configuration>
                         <executions>
                             <execution>
