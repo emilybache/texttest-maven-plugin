@@ -30,7 +30,7 @@ stdout:\d+-\d+-\d+ \d+:\d+:\d+,\d+{REPLACE <timestamp>}
 stdout:succeeded on [\w\d\.-]+{REPLACE succeeded on <machine_name>}
 stdout:FAILED on [\w\d\.-]+{REPLACE FAILED on <machine_name>} 
 classpath:{INTERNAL writedir}{REPLACE <sandbox>}
-classpath::.*\.m2\/repository{REPLACE :<m2 repository>}
+classpath:${HOME}\/\.m2\/repository{REPLACE <m2 repository>}
 catalogue:texttest\.py{->}texttest-texttest-runner-jar-.*marker
 catalogue:-*myapp\..*
 [end]

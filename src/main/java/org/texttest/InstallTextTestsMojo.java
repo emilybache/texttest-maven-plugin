@@ -12,7 +12,8 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 
 /**
- * This goal will set up your texttests so they can be run by the run-texttests goal.
+ * This goal will install your texttests globally on your machine, under the TEXTTEST_ROOT folder.
+ * This is helpful if you want to run them using the TextTest GUI.
  */
 @Mojo(name = "install-texttests", defaultPhase = LifecyclePhase.PRE_INTEGRATION_TEST)
 public class InstallTextTestsMojo extends AbstractTextTestMojo {

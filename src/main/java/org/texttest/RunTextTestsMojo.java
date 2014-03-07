@@ -19,7 +19,8 @@ import java.util.List;
 import static org.twdata.maven.mojoexecutor.MojoExecutor.*;
 
 /**
- * This goal will run your texttests.
+ * This goal will run a texttest test cases, using a command line 'batch session'.
+ * For more information about batch sessions, refer to the documentation on http://texttest.org
  */
 @Mojo(name = "run-texttests",
         requiresDependencyResolution = ResolutionScope.COMPILE_PLUS_RUNTIME,
@@ -64,54 +65,13 @@ public class RunTextTestsMojo extends AbstractTextTestMojo {
     @Override
     public void execute() throws MojoExecutionException, MojoFailureException {
         Path textTestExecutable = findTextTestExecutable();
-        createExtraConfigFiles();
+        if (addClasspathToTextTestEnvironment) {
+            createExtraConfigFiles();
+        }
         runTextTest(textTestExecutable);
     }
 
-    void createExtraConfigFiles() throws MojoExecutionException {
-        if (addClasspathToTextTestEnvironment) {
-
-            executeMojo(
-                    plugin(groupId("org.apache.maven.plugins"), artifactId("maven-dependency-plugin"), version("2.8")),
-                    goal("build-classpath"),
-                    configuration(element(name("outputProperty"), "classpath")),
-                    executionEnvironment(mavenProject, mavenSession, pluginManager));
-
-            String[] classpathElements = new String[]{
-                    mavenProject.getBuild().getOutputDirectory(),
-                    mavenProject.getProperties().getProperty("classpath") // this property has just been set by the maven dependency plugin call above
-            };
-            getLog().debug("classpath elements for this project: " + Arrays.toString(classpathElements));
-            writeClasspathToEnvironmentFile(classpathElements);
-        }
-
-    }
-
-    void writeClasspathToEnvironmentFile(String[] classpathElements) throws MojoExecutionException {
-        StringBuffer text = new StringBuffer();
-        text.append("CLASSPATH:");
-        for (String path: classpathElements) {
-            if (path != null && !"".equals(path)) {
-                text.append(path);
-                text.append(System.getProperty("path.separator"));
-            }
-        }
-        try {
-            Path textTestConfigPath = Paths.get(extraSearchDirectory);
-            if (!Files.exists(textTestConfigPath)) {
-                Files.createDirectories(textTestConfigPath);
-            }
-            Path classpathFile = textTestConfigPath.resolve("environment." + appName);
-            List<String> lines = Arrays.asList(new String[]{text.toString()});
-            Files.write(classpathFile, lines, StandardCharsets.UTF_8);
-        } catch (IOException e) {
-            getLog().error(e);
-            throw new MojoExecutionException("Unable to write configuration file for texttest containing the classpath");
-        }
-    }
-
     Path findTextTestExecutable() throws MojoExecutionException {
-
         Path textTestExecutable = findTextTestOnPath();
         if (textTestExecutable == null) {
             executeMojo(
@@ -143,6 +103,44 @@ public class RunTextTestsMojo extends AbstractTextTestMojo {
         }
         getLog().info("texttest.py not found on PATH " + PATH);
         return null;
+    }
+
+    void createExtraConfigFiles() throws MojoExecutionException {
+        executeMojo(
+                plugin(groupId("org.apache.maven.plugins"), artifactId("maven-dependency-plugin"), version("2.8")),
+                goal("build-classpath"),
+                configuration(element(name("outputProperty"), "classpath")),
+                executionEnvironment(mavenProject, mavenSession, pluginManager));
+
+        String[] classpathElements = new String[]{
+                mavenProject.getBuild().getOutputDirectory(),
+                mavenProject.getProperties().getProperty("classpath") // this property has just been set by the maven dependency plugin call above
+        };
+        getLog().debug("classpath elements for this project: " + Arrays.toString(classpathElements));
+        writeClasspathToEnvironmentFile(classpathElements);
+    }
+
+    void writeClasspathToEnvironmentFile(String[] classpathElements) throws MojoExecutionException {
+        StringBuffer text = new StringBuffer();
+        text.append("CLASSPATH:");
+        for (String path: classpathElements) {
+            if (path != null && !"".equals(path)) {
+                text.append(path);
+                text.append(System.getProperty("path.separator"));
+            }
+        }
+        try {
+            Path textTestConfigPath = Paths.get(extraSearchDirectory);
+            if (!Files.exists(textTestConfigPath)) {
+                Files.createDirectories(textTestConfigPath);
+            }
+            Path classpathFile = textTestConfigPath.resolve("environment." + appName);
+            List<String> lines = Arrays.asList(new String[]{text.toString()});
+            Files.write(classpathFile, lines, StandardCharsets.UTF_8);
+        } catch (IOException e) {
+            getLog().error(e);
+            throw new MojoExecutionException("Unable to write configuration file for texttest containing the classpath");
+        }
     }
 
     void runTextTest(Path textTestExecutable) throws MojoExecutionException {
