@@ -23,11 +23,10 @@
                         <executions>
                             <execution>
                                 <id>install-texttests</id>
-                                <goals><goal>install-texttests</goal></goals>
-                            </execution>
-                            <execution>
-                                <id>run-texttests</id>
-                                <goals><goal>run-texttests</goal></goals>
+                                <goals>
+                                    <goal>install-texttests</goal>
+                                    <goal>run-texttests</goal>
+                                </goals>
                             </execution>
                         </executions>
                     </plugin>

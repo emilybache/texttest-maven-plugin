@@ -6,15 +6,15 @@
 [INFO] 
 [INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ myapp ---
 [WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
-[INFO] skip non existing resourceDirectory /Users/emilyb/.texttest/tmp/ttmp.07Mar160512.97014/ttmp/whole_lifecycle/java_tests_failing/myapp/src/main/resources
+[INFO] skip non existing resourceDirectory /Users/emilyb/.texttest/tmp/ttmp.07Mar164201.99538/ttmp/whole_lifecycle/java_tests_failing/myapp/src/main/resources
 [INFO] 
 [INFO] --- maven-compiler-plugin:2.5.1:compile (default-compile) @ myapp ---
 [WARNING] File encoding has not been set, using platform encoding UTF-8, i.e. build is platform dependent!
-[INFO] Compiling 1 source file to /Users/emilyb/.texttest/tmp/ttmp.07Mar160512.97014/ttmp/whole_lifecycle/java_tests_failing/myapp/target/classes
+[INFO] Compiling 1 source file to /Users/emilyb/.texttest/tmp/ttmp.07Mar164201.99538/ttmp/whole_lifecycle/java_tests_failing/myapp/target/classes
 [INFO] 
 [INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ myapp ---
 [WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
-[INFO] skip non existing resourceDirectory /Users/emilyb/.texttest/tmp/ttmp.07Mar160512.97014/ttmp/whole_lifecycle/java_tests_failing/myapp/src/test/resources
+[INFO] skip non existing resourceDirectory /Users/emilyb/.texttest/tmp/ttmp.07Mar164201.99538/ttmp/whole_lifecycle/java_tests_failing/myapp/src/test/resources
 [INFO] 
 [INFO] --- maven-compiler-plugin:2.5.1:testCompile (default-testCompile) @ myapp ---
 [INFO] No sources to compile
@@ -23,31 +23,31 @@
 [INFO] No tests to run.
 [INFO] 
 [INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ myapp ---
-[INFO] Building jar: /Users/emilyb/.texttest/tmp/ttmp.07Mar160512.97014/ttmp/whole_lifecycle/java_tests_failing/myapp/target/myapp-1.0-SNAPSHOT.jar
+[INFO] Building jar: /Users/emilyb/.texttest/tmp/ttmp.07Mar164201.99538/ttmp/whole_lifecycle/java_tests_failing/myapp/target/myapp-1.0-SNAPSHOT.jar
 [INFO] 
 [INFO] --- texttest-maven-plugin:1.0-SNAPSHOT:install-texttests (install-texttests) @ myapp ---
-[INFO] Will install texttests globally with name myapp under TEXTTEST_ROOT /Users/emilyb/.texttest/tmp/ttmp.07Mar160512.97014/ttmp/whole_lifecycle/java_tests_failing/texttest_home
+[INFO] Will install texttests globally with name myapp under TEXTTEST_ROOT /Users/emilyb/.texttest/tmp/ttmp.07Mar164201.99538/ttmp/whole_lifecycle/java_tests_failing/texttest_home
 [INFO] 
-[INFO] --- texttest-maven-plugin:1.0-SNAPSHOT:run-texttests (run-texttests) @ myapp ---
+[INFO] --- texttest-maven-plugin:1.0-SNAPSHOT:run-texttests (install-texttests) @ myapp ---
 [INFO] found texttest on PATH at location: /Users/emilyb/.profile.d/bin/texttest.py
 [INFO] No dependencies found.
-[INFO] 2014-03-07 16:05:29,536 - Using local queues for Application MyApp, checkout /Users/emilyb/.texttest/tmp/ttmp.07Mar160512.97014/ttmp/whole_lifecycle/java_tests_failing/myapp
-[INFO] 2014-03-07 16:05:29,539 - Q: Submitting MyApp test-case hello to default local queue
-[INFO] 2014-03-07 16:05:29,797 - S: MyApp test-case hello FAILED on Emilys-MacBook-Pro.local : new results in exitcode, differences in stderr,stdout
-[INFO] 2014-03-07 16:05:29,797 - Results:
-[INFO] 2014-03-07 16:05:29,797 - 
-[INFO] 2014-03-07 16:05:29,797 - Tests that did not succeed:
-[INFO] 2014-03-07 16:05:29,797 -   MyApp test-case hello FAILED on Emilys-MacBook-Pro.local : new results in exitcode, differences in stderr,stdout
-[INFO] 2014-03-07 16:05:29,798 - 
-[INFO] 2014-03-07 16:05:29,798 - Tests Run: 1, Failures: 1
+[INFO] 2014-03-07 16:42:07,032 - Using local queues for Application MyApp, checkout /Users/emilyb/.texttest/tmp/ttmp.07Mar164201.99538/ttmp/whole_lifecycle/java_tests_failing/myapp
+[INFO] 2014-03-07 16:42:07,035 - Q: Submitting MyApp test-case hello to default local queue
+[INFO] 2014-03-07 16:42:07,281 - S: MyApp test-case hello FAILED on Emilys-MacBook-Pro.local : new results in exitcode, differences in stderr,stdout
+[INFO] 2014-03-07 16:42:07,282 - Results:
+[INFO] 2014-03-07 16:42:07,282 - 
+[INFO] 2014-03-07 16:42:07,282 - Tests that did not succeed:
+[INFO] 2014-03-07 16:42:07,282 -   MyApp test-case hello FAILED on Emilys-MacBook-Pro.local : new results in exitcode, differences in stderr,stdout
+[INFO] 2014-03-07 16:42:07,282 - 
+[INFO] 2014-03-07 16:42:07,282 - Tests Run: 1, Failures: 1
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD FAILURE
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 4.822s
-[INFO] Finished at: Fri Mar 07 16:05:30 CET 2014
-[INFO] Final Memory: 19M/245M
+[INFO] Total time: 3.647s
+[INFO] Finished at: Fri Mar 07 16:42:08 CET 2014
+[INFO] Final Memory: 21M/310M
 [INFO] ------------------------------------------------------------------------
-[ERROR] Failed to execute goal org.texttest:texttest-maven-plugin:1.0-SNAPSHOT:run-texttests (run-texttests) on project myapp: There were test failures -> [Help 1]
+[ERROR] Failed to execute goal org.texttest:texttest-maven-plugin:1.0-SNAPSHOT:run-texttests (install-texttests) on project myapp: There were test failures -> [Help 1]
 [ERROR] 
 [ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
 [ERROR] Re-run Maven using the -X switch to enable full debug logging.

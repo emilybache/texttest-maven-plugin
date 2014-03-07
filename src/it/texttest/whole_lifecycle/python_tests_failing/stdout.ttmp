@@ -6,14 +6,14 @@
 [INFO] 
 [INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ myapp ---
 [WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
-[INFO] skip non existing resourceDirectory /Users/emilyb/.texttest/tmp/ttmp.07Mar135356.90919/ttmp/whole_lifecycle/python_tests_failing/myapp/src/main/resources
+[INFO] skip non existing resourceDirectory /Users/emilyb/.texttest/tmp/ttmp.07Mar164417.99606/ttmp/whole_lifecycle/python_tests_failing/myapp/src/main/resources
 [INFO] 
 [INFO] --- maven-compiler-plugin:2.5.1:compile (default-compile) @ myapp ---
 [INFO] No sources to compile
 [INFO] 
 [INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ myapp ---
 [WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
-[INFO] skip non existing resourceDirectory /Users/emilyb/.texttest/tmp/ttmp.07Mar135356.90919/ttmp/whole_lifecycle/python_tests_failing/myapp/src/test/resources
+[INFO] skip non existing resourceDirectory /Users/emilyb/.texttest/tmp/ttmp.07Mar164417.99606/ttmp/whole_lifecycle/python_tests_failing/myapp/src/test/resources
 [INFO] 
 [INFO] --- maven-compiler-plugin:2.5.1:testCompile (default-testCompile) @ myapp ---
 [INFO] No sources to compile
@@ -23,28 +23,28 @@
 [INFO] 
 [INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ myapp ---
 [WARNING] JAR will be empty - no content was marked for inclusion!
-[INFO] Building jar: /Users/emilyb/.texttest/tmp/ttmp.07Mar135356.90919/ttmp/whole_lifecycle/python_tests_failing/myapp/target/myapp-1.0-SNAPSHOT.jar
+[INFO] Building jar: /Users/emilyb/.texttest/tmp/ttmp.07Mar164417.99606/ttmp/whole_lifecycle/python_tests_failing/myapp/target/myapp-1.0-SNAPSHOT.jar
 [INFO] 
-[INFO] --- texttest-maven-plugin:1.0-SNAPSHOT:install-texttests (install-texttests) @ myapp ---
-[INFO] Will install texttests globally with name myapp under TEXTTEST_ROOT /Users/emilyb/.texttest/tmp/ttmp.07Mar135356.90919/ttmp/whole_lifecycle/python_tests_failing/texttest_home
+[INFO] --- texttest-maven-plugin:1.0-SNAPSHOT:install-texttests (run-texttests) @ myapp ---
+[INFO] Will install texttests globally with name myapp under TEXTTEST_ROOT /Users/emilyb/.texttest/tmp/ttmp.07Mar164417.99606/ttmp/whole_lifecycle/python_tests_failing/texttest_home
 [INFO] 
 [INFO] --- texttest-maven-plugin:1.0-SNAPSHOT:run-texttests (run-texttests) @ myapp ---
 [INFO] found texttest on PATH at location: /Users/emilyb/.profile.d/bin/texttest.py
-[INFO] 2014-03-07 13:54:02,888 - Using local queues for Application MyApp, checkout /Users/emilyb/.texttest/tmp/ttmp.07Mar135356.90919/ttmp/whole_lifecycle/python_tests_failing/myapp
-[INFO] 2014-03-07 13:54:02,893 - Q: Submitting MyApp test-case hello to default local queue
-[INFO] 2014-03-07 13:54:03,184 - S: MyApp test-case hello FAILED on Emilys-MacBook-Pro.local : differences in stdout
-[INFO] 2014-03-07 13:54:03,185 - Results:
-[INFO] 2014-03-07 13:54:03,185 - 
-[INFO] 2014-03-07 13:54:03,185 - Tests that did not succeed:
-[INFO] 2014-03-07 13:54:03,186 -   MyApp test-case hello FAILED on Emilys-MacBook-Pro.local : differences in stdout
-[INFO] 2014-03-07 13:54:03,186 - 
-[INFO] 2014-03-07 13:54:03,186 - Tests Run: 1, Failures: 1
+[INFO] 2014-03-07 16:44:26,669 - Using local queues for Application MyApp, checkout /Users/emilyb/.texttest/tmp/ttmp.07Mar164417.99606/ttmp/whole_lifecycle/python_tests_failing/myapp
+[INFO] 2014-03-07 16:44:26,695 - Q: Submitting MyApp test-case hello to default local queue
+[INFO] 2014-03-07 16:44:27,076 - S: MyApp test-case hello FAILED on Emilys-MacBook-Pro.local : differences in stdout
+[INFO] 2014-03-07 16:44:27,077 - Results:
+[INFO] 2014-03-07 16:44:27,078 - 
+[INFO] 2014-03-07 16:44:27,078 - Tests that did not succeed:
+[INFO] 2014-03-07 16:44:27,078 -   MyApp test-case hello FAILED on Emilys-MacBook-Pro.local : differences in stdout
+[INFO] 2014-03-07 16:44:27,078 - 
+[INFO] 2014-03-07 16:44:27,078 - Tests Run: 1, Failures: 1
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD FAILURE
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 4.512s
-[INFO] Finished at: Fri Mar 07 13:54:03 CET 2014
-[INFO] Final Memory: 16M/310M
+[INFO] Total time: 6.443s
+[INFO] Finished at: Fri Mar 07 16:44:27 CET 2014
+[INFO] Final Memory: 13M/245M
 [INFO] ------------------------------------------------------------------------
 [ERROR] Failed to execute goal org.texttest:texttest-maven-plugin:1.0-SNAPSHOT:run-texttests (run-texttests) on project myapp: There were test failures -> [Help 1]
 [ERROR] 
