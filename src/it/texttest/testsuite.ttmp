@@ -1,3 +1,5 @@
 # Check the texttest maven goal has good help text.
 helptext
 install_texttests
+run_texttests
+whole_lifecycle

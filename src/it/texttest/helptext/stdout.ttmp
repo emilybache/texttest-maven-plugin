@@ -14,11 +14,11 @@ Artifact Id: texttest-maven-plugin
 Version: 1.0-SNAPSHOT
 Goal Prefix: texttest
 
-This plugin has 1 goal:
+This plugin has 2 goals:
 
 texttest:install-texttests
-  Description: This maven plugin will set up your texttests so they can be
-    run by Maven.
+  Description: This goal will set up your texttests so they can be run by the
+    run-texttests goal.
   Implementation: org.texttest.InstallTextTestsMojo
   Language: java
 
@@ -51,11 +51,39 @@ texttest:install-texttests
       we will use the environment variable $TEXTTEST_HOME as a fallback option.
       If neither are set, we use ${basedir}/src/it/texttest
 
+texttest:run-texttests
+  Description: This goal will run your texttests.
+  Implementation: org.texttest.RunTextTestsMojo
+  Language: java
+
+  Available parameters:
+
+    appName (Default: ${project.artifactId})
+      User property: app_name
+      The short name of the texttest app - ie the file extension of the
+      texttest config file. Defaults to the artifactId of your project.
+
+    batchSessionName (Default: all)
+      (no description available)
+
+    sandbox (Default: ${project.reporting.outputDirectory}/sandbox)
+      (no description available)
+
+    texttestRoot
+      User property: texttest_root
+      The path to TEXTTEST_ROOT - ie where the texttest runner will find your
+      test cases. If the parameter 'install_globally' is set to true, then this
+      must be set, and is expected to be a global location on your machine
+      where you may have many test suites installed. If you don't set this
+      value, we use the environment variable $TEXTTEST_ROOT If that is not set,
+      we will use the environment variable $TEXTTEST_HOME as a fallback option.
+      If neither are set, we use ${basedir}/src/it/texttest
+
 
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 2.242s
-[INFO] Finished at: Thu Mar 06 14:29:45 CET 2014
+[INFO] Total time: 2.581s
+[INFO] Finished at: Thu Mar 06 21:55:13 CET 2014
 [INFO] Final Memory: 11M/310M
 [INFO] ------------------------------------------------------------------------
