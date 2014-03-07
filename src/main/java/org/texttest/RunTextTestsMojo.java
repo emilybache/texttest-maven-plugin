@@ -87,6 +87,9 @@ public class RunTextTestsMojo extends AbstractTextTestMojo {
             Process process = textTest.start();
             new OutputLogger(process.getInputStream(), getLog()).start();
             final int exitStatus = process.waitFor();
+            if (exitStatus != 0) {
+                throw new MojoExecutionException("There were test failures");
+            }
         } catch (IOException e) {
             getLog().error(e);
             throw new MojoExecutionException("TextTest failed to execute");

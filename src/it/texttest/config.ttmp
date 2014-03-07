@@ -27,6 +27,7 @@ stdout:Final Memory: [\w\d\/]+{REPLACE Final Memory: <memory>}
 stdout:loading:
 stdout:{INTERNAL writedir}{REPLACE <sandbox>}
 stdout:\d+-\d+-\d+ \d+:\d+:\d+,\d+{REPLACE <timestamp>}
+stdout:[succeeded|FAILED] on [\w\d\.-]+{REPLACE succeeded/failed on <machine_name>}
 classpath:.*\/\.m2\/repository{REPLACE <m2 repository>}
 catalogue:texttest\.py{->}texttest-texttest-runner-jar-.*marker
 catalogue:-*myapp\..*

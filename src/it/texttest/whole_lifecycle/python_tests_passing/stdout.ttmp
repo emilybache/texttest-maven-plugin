@@ -35,7 +35,7 @@
 [INFO] Unpacking /Users/emilyb/.m2/repository/org/texttest/texttest-runner/2.26/texttest-runner-2.26.jar to /Users/emilyb/.texttest/tmp/ttmp.07Mar123223.86791/ttmp/whole_lifecycle/python_tests_passing/myapp/target/dependency with includes "" and excludes ""
 [INFO] 2014-03-07 12:32:28,075 - Using local queues for Application MyApp, checkout /Users/emilyb/.texttest/tmp/ttmp.07Mar123223.86791/ttmp/whole_lifecycle/python_tests_passing/myapp
 [INFO] 2014-03-07 12:32:28,077 - Q: Submitting MyApp test-case hello to default local queue
-[INFO] 2014-03-07 12:32:28,252 - S: MyApp test-case hello succeeded on Emilys-MacBook-Pro.local
+[INFO] 2014-03-07 12:32:28,252 - S: MyApp test-case hello succeeded on Machine-name.local
 [INFO] 2014-03-07 12:32:28,253 - Results:
 [INFO] 2014-03-07 12:32:28,253 - 
 [INFO] 2014-03-07 12:32:28,253 - Tests Run: 1

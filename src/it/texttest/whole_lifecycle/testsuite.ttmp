@@ -1,2 +1,5 @@
+# Build a python project with tests that fail
+python_tests_failing
+
 # Build a python project with tests that pass
 python_tests_passing
