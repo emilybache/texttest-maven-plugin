@@ -24,13 +24,10 @@
                             <execution>
                                 <id>install-texttests</id>
                                 <goals><goal>install-texttests</goal></goals>
-                                <phase>pre-integration-test</phase>
-
                             </execution>
                             <execution>
                                 <id>run-texttests</id>
                                 <goals><goal>run-texttests</goal></goals>
-                                <phase>integration-test</phase>
                             </execution>
                         </executions>
                     </plugin>

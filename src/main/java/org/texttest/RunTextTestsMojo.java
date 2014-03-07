@@ -3,6 +3,7 @@ package org.texttest;
 import org.apache.maven.plugin.MojoExecutionException;
 import org.apache.maven.plugin.MojoFailureException;
 import org.apache.maven.plugin.logging.Log;
+import org.apache.maven.plugins.annotations.LifecyclePhase;
 import org.apache.maven.plugins.annotations.Mojo;
 import org.apache.maven.plugins.annotations.Parameter;
 import org.apache.maven.plugins.annotations.ResolutionScope;
@@ -20,7 +21,9 @@ import static org.twdata.maven.mojoexecutor.MojoExecutor.*;
 /**
  * This goal will run your texttests.
  */
-@Mojo(name = "run-texttests", requiresDependencyResolution = ResolutionScope.COMPILE_PLUS_RUNTIME)
+@Mojo(name = "run-texttests",
+        requiresDependencyResolution = ResolutionScope.COMPILE_PLUS_RUNTIME,
+        defaultPhase = LifecyclePhase.INTEGRATION_TEST)
 public class RunTextTestsMojo extends AbstractTextTestMojo {
 
     /**

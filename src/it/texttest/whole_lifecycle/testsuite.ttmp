@@ -9,3 +9,6 @@ java_tests_failing
 
 # Build a java project with tests that pass
 java_tests_passing
+
+# Build a java project without using a 'run-its' profile
+run_without_profile

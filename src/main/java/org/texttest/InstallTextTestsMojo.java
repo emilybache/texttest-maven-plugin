@@ -14,7 +14,7 @@ import java.nio.file.Paths;
 /**
  * This goal will set up your texttests so they can be run by the run-texttests goal.
  */
-@Mojo(name = "install-texttests")
+@Mojo(name = "install-texttests", defaultPhase = LifecyclePhase.PRE_INTEGRATION_TEST)
 public class InstallTextTestsMojo extends AbstractTextTestMojo {
 
     /**

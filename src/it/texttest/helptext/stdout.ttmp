@@ -21,6 +21,7 @@ texttest:install-texttests
     run-texttests goal.
   Implementation: org.texttest.InstallTextTestsMojo
   Language: java
+  Bound to phase: pre-integration-test
 
   Available parameters:
 
@@ -55,6 +56,7 @@ texttest:run-texttests
   Description: This goal will run your texttests.
   Implementation: org.texttest.RunTextTestsMojo
   Language: java
+  Bound to phase: integration-test
 
   Available parameters:
 
@@ -110,7 +112,7 @@ texttest:run-texttests
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 4.080s
-[INFO] Finished at: Fri Mar 07 16:05:21 CET 2014
-[INFO] Final Memory: 10M/244M
+[INFO] Total time: 4.155s
+[INFO] Finished at: Fri Mar 07 16:34:53 CET 2014
+[INFO] Final Memory: 10M/245M
 [INFO] ------------------------------------------------------------------------
