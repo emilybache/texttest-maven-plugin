@@ -69,6 +69,7 @@
             <version>2.8</version>
         </dependency>
 
+        <!-- this dependency is not yet published. Install texttest by hand, and remove it. -->
         <dependency>
             <groupId>org.texttest</groupId>
             <artifactId>texttest-runner</artifactId>

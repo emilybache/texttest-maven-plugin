@@ -1,1 +1,1 @@
--cp /Users/emilyb/.texttest/tmp/ttmp.09Mar212833.5320/ttmp/run_texttests/default_run/myapp/target/classes:/Users/emilyb/.m2/repository/junit/junit/4.8.2/junit-4.8.2.jar:/Users/emilyb/.m2/repository/org/texttest/texttest-runner/3.26/texttest-runner-3.26.jar:
+-cp /Users/emilyb/.texttest/tmp/ttmp.09Mar212833.5320/ttmp/run_texttests/default_run/myapp/target/classes:/foobar/.m2/repository/junit/junit/4.8.2/junit-4.8.2.jar:/foobar/.m2/repository/org/texttest/texttest-runner/3.26/texttest-runner-3.26.jar:

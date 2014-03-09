@@ -61,6 +61,12 @@ public class RunTextTestsMojo extends AbstractTextTestMojo {
     @Parameter(property="extra_search_directory", defaultValue = "${basedir}/target/texttest_extra_config")
     String extraSearchDirectory;
 
+    /**
+     * If you don't have texttest installed already, maven will download the texttest-runner with this version.
+     */
+    @Parameter(property="texttest_version", defaultValue = "3.26")
+    String texttestVersion;
+
 
     @Override
     public void execute() throws MojoExecutionException, MojoFailureException {
@@ -81,7 +87,7 @@ public class RunTextTestsMojo extends AbstractTextTestMojo {
                             element(name("artifactItem"),
                                     element(name("artifactId"), "texttest-runner"),
                                     element(name("groupId"), "org.texttest"),
-                                    element(name("version"), "2.26")))),
+                                    element(name("version"), texttestVersion)))),
                     executionEnvironment(mavenProject, mavenSession, pluginManager));
             textTestExecutable = mavenProject.getBasedir().toPath().resolve("target/dependency/bin/texttest.py");
             if (!Files.exists(textTestExecutable)) {

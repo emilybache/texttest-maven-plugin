@@ -111,11 +111,16 @@ texttest:run-texttests
       If neither are set, we use the value of 'texttestLocation' as a last
       resort.
 
+    texttestVersion (Default: 3.26)
+      User property: texttest_version
+      If you don't have texttest installed already, maven will download the
+      texttest-runner with this version.
+
 
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 1.081s
-[INFO] Finished at: Sun Mar 09 21:32:15 CET 2014
+[INFO] Total time: 3.929s
+[INFO] Finished at: Sun Mar 09 21:50:31 CET 2014
 [INFO] Final Memory: 10M/245M
 [INFO] ------------------------------------------------------------------------

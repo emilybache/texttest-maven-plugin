@@ -36,15 +36,15 @@ You'll get a lot more information about how to configure this plugin from maven 
 
 	mvn help:describe -Ddetail -Dplugin=org.texttest:texttest-maven-plugin
 
-If you have texttest.py on your $PATH then this plugin should work just fine. If you don't, then you'll want
-to add this dependency to your POM:
 
-	<dependencies>
-		<dependency>
-            <groupId>org.texttest</groupId>
-            <artifactId>texttest-runner</artifactId>
-            <version>3.26</version>
-        </dependency>
-    </dependencies>
+For Developers
+--------------
 
-Note that this artifact is not yet published to any central maven repository. We're working on that.
+Build this project with
+
+    mvn clean install
+
+Run the self tests with
+
+    mvn -Prun-its verify
+
