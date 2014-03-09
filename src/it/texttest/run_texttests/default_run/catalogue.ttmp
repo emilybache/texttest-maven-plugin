@@ -3,4 +3,4 @@ The following new files/directories were created:
 ----myapp
 --------target
 ------------texttest_extra_config
-----------------environment.myapp
+----------------interpreter_options.myapp

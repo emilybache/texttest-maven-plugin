@@ -17,8 +17,9 @@ Goal Prefix: texttest
 This plugin has 2 goals:
 
 texttest:install-texttests
-  Description: This goal will set up your texttests so they can be run by the
-    run-texttests goal.
+  Description: This goal will install your texttests globally on your
+    machine, under the TEXTTEST_ROOT folder. This is helpful if you want to run
+    them using the TextTest GUI.
   Implementation: org.texttest.InstallTextTestsMojo
   Language: java
   Bound to phase: pre-integration-test
@@ -53,7 +54,9 @@ texttest:install-texttests
       resort.
 
 texttest:run-texttests
-  Description: This goal will run your texttests.
+  Description: This goal will run a texttest test cases, using a command line
+    'batch session'. For more information about batch sessions, refer to the
+    documentation on http://texttest.org
   Implementation: org.texttest.RunTextTestsMojo
   Language: java
   Bound to phase: integration-test
@@ -84,9 +87,9 @@ texttest:run-texttests
     extraSearchDirectory (Default: ${basedir}/target/texttest_extra_config)
       User property: extra_search_directory
       What folder to use for the 'extra_search_directory' setting you may have
-      in your config file This plugin will write an environment file containing
-      the CLASSPATH to this folder if you set the property 'add_classpath' to
-      true.
+      in your config file This plugin will write an interpreter_options file
+      containing the CLASSPATH to this folder if you set the property
+      'add_classpath' to true.
 
     sandbox (Default: ${project.basedir}/target/sandbox)
       Where texttest should put test result files and files relating to test
@@ -112,7 +115,7 @@ texttest:run-texttests
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 4.155s
-[INFO] Finished at: Fri Mar 07 16:34:53 CET 2014
+[INFO] Total time: 1.081s
+[INFO] Finished at: Sun Mar 09 21:32:15 CET 2014
 [INFO] Final Memory: 10M/245M
 [INFO] ------------------------------------------------------------------------

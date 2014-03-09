@@ -8,10 +8,9 @@ The following new files/directories were created:
 ------------maven-archiver
 ----------------pom.properties
 ------------sandbox
-----------------myapp.07Mar160529.97190
+----------------myapp.09Mar212852.5510
 --------------------myapp
 ------------------------hello
-----------------------------exitcode.myapp
 ----------------------------stderr.myapp
 ----------------------------stdout.myapp
 ----------------------------framework_tmp
@@ -20,6 +19,6 @@ The following new files/directories were created:
 ------------------------Test-hello-MyApp.errors
 ------------------------Test-hello-MyApp.log
 ------------texttest_extra_config
-----------------environment.myapp
+----------------interpreter_options.myapp
 ----texttest_home
 --------myapp

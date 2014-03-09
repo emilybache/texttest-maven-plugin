@@ -17,7 +17,7 @@ copy_test_path:myapp
 copy_test_path:texttest_home
 
 [collate_file]
-classpath:myapp/target/texttest_extra_config/environment.myapp
+classpath:myapp/target/texttest_extra_config/interpreter_options.myapp
 [end]
 
 [run_dependent_text]

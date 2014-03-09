@@ -55,7 +55,7 @@ public class RunTextTestsMojo extends AbstractTextTestMojo {
 
     /**
      * What folder to use for the "extra_search_directory" setting you may have in your config file
-     * This plugin will write an environment file containing the CLASSPATH to this folder
+     * This plugin will write an interpreter_options file containing the CLASSPATH to this folder
      * if you set the property 'add_classpath' to true.
      */
     @Parameter(property="extra_search_directory", defaultValue = "${basedir}/target/texttest_extra_config")
@@ -122,7 +122,7 @@ public class RunTextTestsMojo extends AbstractTextTestMojo {
 
     void writeClasspathToEnvironmentFile(String[] classpathElements) throws MojoExecutionException {
         StringBuffer text = new StringBuffer();
-        text.append("CLASSPATH:");
+        text.append("-cp ");
         for (String path: classpathElements) {
             if (path != null && !"".equals(path)) {
                 text.append(path);
@@ -134,7 +134,7 @@ public class RunTextTestsMojo extends AbstractTextTestMojo {
             if (!Files.exists(textTestConfigPath)) {
                 Files.createDirectories(textTestConfigPath);
             }
-            Path classpathFile = textTestConfigPath.resolve("environment." + appName);
+            Path classpathFile = textTestConfigPath.resolve("interpreter_options." + appName);
             List<String> lines = Arrays.asList(new String[]{text.toString()});
             Files.write(classpathFile, lines, StandardCharsets.UTF_8);
         } catch (IOException e) {
