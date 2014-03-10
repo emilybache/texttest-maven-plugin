@@ -11,6 +11,12 @@
 
     <url>http://texttest.org</url>
 
+    <scm>
+        <connection>scm:git:git@github.com:emilybache/texttest-maven-plugin.git</connection>
+        <url>scm:git:git@github.com:emilybache/texttest-maven-plugin.git</url>
+        <developerConnection>scm:git:git@github.com:emilybache/texttest-maven-plugin.git</developerConnection>
+    </scm>
+
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
