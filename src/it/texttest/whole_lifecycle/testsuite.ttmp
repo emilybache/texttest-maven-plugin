@@ -15,3 +15,6 @@ run_without_profile
 
 # Build a python project with tests that pass that use capturemock
 using_capturemock
+
+# The main class is on the tests classpath not the main classpath - should still work
+test_classes_on_classpath

@@ -1,0 +1,45 @@
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Sample Project with Java tests using TextTest Plugin 1.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ myapp ---
+[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory /Users/emilyb/.texttest/tmp/ttmp.10Mar133345.21068/ttmp/whole_lifecycle/test_classes_on_classpath/myapp/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:compile (default-compile) @ myapp ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ myapp ---
+[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory /Users/emilyb/.texttest/tmp/ttmp.10Mar133345.21068/ttmp/whole_lifecycle/test_classes_on_classpath/myapp/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:testCompile (default-testCompile) @ myapp ---
+[WARNING] File encoding has not been set, using platform encoding UTF-8, i.e. build is platform dependent!
+[INFO] Compiling 1 source file to /Users/emilyb/.texttest/tmp/ttmp.10Mar133345.21068/ttmp/whole_lifecycle/test_classes_on_classpath/myapp/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ myapp ---
+[INFO] 
+[INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ myapp ---
+[WARNING] JAR will be empty - no content was marked for inclusion!
+[INFO] Building jar: /Users/emilyb/.texttest/tmp/ttmp.10Mar133345.21068/ttmp/whole_lifecycle/test_classes_on_classpath/myapp/target/myapp-1.0-SNAPSHOT.jar
+[INFO] 
+[INFO] --- texttest-maven-plugin:1.2-SNAPSHOT:install-texttests (run-texttests) @ myapp ---
+[INFO] Will install texttests globally with name myapp under TEXTTEST_ROOT /Users/emilyb/.texttest/tmp/ttmp.10Mar133345.21068/ttmp/whole_lifecycle/test_classes_on_classpath/texttest_home
+[INFO] 
+[INFO] --- texttest-maven-plugin:1.2-SNAPSHOT:run-texttests (run-texttests) @ myapp ---
+[INFO] found texttest on PATH at location: /Users/emilyb/.profile.d/bin/texttest.py
+[INFO] 2014-03-10 13:33:50,615 - Using local queues for Application MyApp, checkout /Users/emilyb/.texttest/tmp/ttmp.10Mar133345.21068/ttmp/whole_lifecycle/test_classes_on_classpath/myapp
+[INFO] 2014-03-10 13:33:50,617 - Q: Submitting MyApp test-case hello to default local queue
+[INFO] 2014-03-10 13:33:50,851 - S: MyApp test-case hello succeeded on Emilys-MacBook-Pro.local
+[INFO] 2014-03-10 13:33:50,851 - Results:
+[INFO] 2014-03-10 13:33:50,851 - 
+[INFO] 2014-03-10 13:33:50,851 - Tests Run: 1
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 3.958s
+[INFO] Finished at: Mon Mar 10 13:33:51 CET 2014
+[INFO] Final Memory: 21M/310M
+[INFO] ------------------------------------------------------------------------

@@ -120,6 +120,7 @@ public class RunTextTestsMojo extends AbstractTextTestMojo {
 
         String[] classpathElements = new String[]{
                 mavenProject.getBuild().getOutputDirectory(),
+                mavenProject.getBuild().getTestOutputDirectory(),
                 mavenProject.getProperties().getProperty("classpath") // this property has just been set by the maven dependency plugin call above
         };
         getLog().debug("classpath elements for this project: " + Arrays.toString(classpathElements));
