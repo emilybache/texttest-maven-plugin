@@ -12,9 +12,9 @@
     <url>http://texttest.org</url>
 
     <scm>
-        <connection>scm:git:git@github.com:emilybache/texttest-maven-plugin.git</connection>
-        <url>scm:git:git@github.com:emilybache/texttest-maven-plugin.git</url>
-        <developerConnection>scm:git:git@github.com:emilybache/texttest-maven-plugin.git</developerConnection>
+        <connection>scm:git:https://github.com/emilybache/texttest-maven-plugin.git</connection>
+        <url>scm:git:https://github.com/emilybache/texttest-maven-plugin.git</url>
+        <developerConnection>scm:git:https://github.com/emilybache/texttest-maven-plugin.git</developerConnection>
     </scm>
 
     <properties>
