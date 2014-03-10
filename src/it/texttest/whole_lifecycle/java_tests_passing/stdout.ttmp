@@ -6,15 +6,15 @@
 [INFO] 
 [INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ myapp ---
 [WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
-[INFO] skip non existing resourceDirectory /Users/emilyb/.texttest/tmp/ttmp.09Mar212742.5105/ttmp/whole_lifecycle/java_tests_passing/myapp/src/main/resources
+[INFO] skip non existing resourceDirectory /Users/emilyb/.texttest/tmp/ttmp.10Mar112600.16407/ttmp/whole_lifecycle/java_tests_passing/myapp/src/main/resources
 [INFO] 
 [INFO] --- maven-compiler-plugin:2.5.1:compile (default-compile) @ myapp ---
 [WARNING] File encoding has not been set, using platform encoding UTF-8, i.e. build is platform dependent!
-[INFO] Compiling 1 source file to /Users/emilyb/.texttest/tmp/ttmp.09Mar212742.5105/ttmp/whole_lifecycle/java_tests_passing/myapp/target/classes
+[INFO] Compiling 1 source file to /Users/emilyb/.texttest/tmp/ttmp.10Mar112600.16407/ttmp/whole_lifecycle/java_tests_passing/myapp/target/classes
 [INFO] 
 [INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ myapp ---
 [WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
-[INFO] skip non existing resourceDirectory /Users/emilyb/.texttest/tmp/ttmp.09Mar212742.5105/ttmp/whole_lifecycle/java_tests_passing/myapp/src/test/resources
+[INFO] skip non existing resourceDirectory /Users/emilyb/.texttest/tmp/ttmp.10Mar112600.16407/ttmp/whole_lifecycle/java_tests_passing/myapp/src/test/resources
 [INFO] 
 [INFO] --- maven-compiler-plugin:2.5.1:testCompile (default-testCompile) @ myapp ---
 [INFO] No sources to compile
@@ -23,23 +23,23 @@
 [INFO] No tests to run.
 [INFO] 
 [INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ myapp ---
-[INFO] Building jar: /Users/emilyb/.texttest/tmp/ttmp.09Mar212742.5105/ttmp/whole_lifecycle/java_tests_passing/myapp/target/myapp-1.0-SNAPSHOT.jar
+[INFO] Building jar: /Users/emilyb/.texttest/tmp/ttmp.10Mar112600.16407/ttmp/whole_lifecycle/java_tests_passing/myapp/target/myapp-1.0-SNAPSHOT.jar
 [INFO] 
-[INFO] --- texttest-maven-plugin:1.0-SNAPSHOT:install-texttests (run-texttests) @ myapp ---
-[INFO] Will install texttests globally with name myapp under TEXTTEST_ROOT /Users/emilyb/.texttest/tmp/ttmp.09Mar212742.5105/ttmp/whole_lifecycle/java_tests_passing/texttest_home
+[INFO] --- texttest-maven-plugin:1.2-SNAPSHOT:install-texttests (run-texttests) @ myapp ---
+[INFO] Will install texttests globally with name myapp under TEXTTEST_ROOT /Users/emilyb/.texttest/tmp/ttmp.10Mar112600.16407/ttmp/whole_lifecycle/java_tests_passing/texttest_home
 [INFO] 
-[INFO] --- texttest-maven-plugin:1.0-SNAPSHOT:run-texttests (run-texttests) @ myapp ---
+[INFO] --- texttest-maven-plugin:1.2-SNAPSHOT:run-texttests (run-texttests) @ myapp ---
 [INFO] found texttest on PATH at location: /Users/emilyb/.profile.d/bin/texttest.py
-[INFO] 2014-03-09 21:28:00,673 - Using local queues for Application MyApp, checkout /Users/emilyb/.texttest/tmp/ttmp.09Mar212742.5105/ttmp/whole_lifecycle/java_tests_passing/myapp
-[INFO] 2014-03-09 21:28:00,676 - Q: Submitting MyApp test-case hello to default local queue
-[INFO] 2014-03-09 21:28:00,912 - S: MyApp test-case hello succeeded on Emilys-MacBook-Pro.local
-[INFO] 2014-03-09 21:28:00,913 - Results:
-[INFO] 2014-03-09 21:28:00,913 - 
-[INFO] 2014-03-09 21:28:00,913 - Tests Run: 1
+[INFO] 2014-03-10 11:26:20,284 - Using local queues for Application MyApp, checkout /Users/emilyb/.texttest/tmp/ttmp.10Mar112600.16407/ttmp/whole_lifecycle/java_tests_passing/myapp
+[INFO] 2014-03-10 11:26:20,288 - Q: Submitting MyApp test-case hello to default local queue
+[INFO] 2014-03-10 11:26:20,550 - S: MyApp test-case hello succeeded on Emilys-MacBook-Pro.local
+[INFO] 2014-03-10 11:26:20,551 - Results:
+[INFO] 2014-03-10 11:26:20,551 - 
+[INFO] 2014-03-10 11:26:20,551 - Tests Run: 1
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 5.295s
-[INFO] Finished at: Sun Mar 09 21:28:01 CET 2014
-[INFO] Final Memory: 23M/439M
+[INFO] Total time: 6.157s
+[INFO] Finished at: Mon Mar 10 11:26:21 CET 2014
+[INFO] Final Memory: 19M/245M
 [INFO] ------------------------------------------------------------------------

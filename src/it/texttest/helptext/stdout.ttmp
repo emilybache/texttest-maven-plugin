@@ -5,13 +5,13 @@
 [INFO] ------------------------------------------------------------------------
 [INFO] 
 [INFO] --- maven-help-plugin:2.2:describe (default-cli) @ myapp ---
-[INFO] org.texttest:texttest-maven-plugin:1.0-SNAPSHOT
+[INFO] org.texttest:texttest-maven-plugin:1.2-SNAPSHOT
 
 Name: TextTest Maven Plugin
 Description: (no description available)
 Group Id: org.texttest
 Artifact Id: texttest-maven-plugin
-Version: 1.0-SNAPSHOT
+Version: 1.2-SNAPSHOT
 Goal Prefix: texttest
 
 This plugin has 2 goals:
@@ -120,7 +120,7 @@ texttest:run-texttests
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 3.929s
-[INFO] Finished at: Sun Mar 09 21:50:31 CET 2014
+[INFO] Total time: 1.055s
+[INFO] Finished at: Mon Mar 10 11:29:10 CET 2014
 [INFO] Final Memory: 10M/245M
 [INFO] ------------------------------------------------------------------------

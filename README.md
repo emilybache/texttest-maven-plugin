@@ -3,8 +3,6 @@ TextTest Maven Plugin
 
 Use this plugin in your maven project to run your texttests.
 
-Note that as yet this plugin is not generally downloadable, you'll have to build and install it yourself.
-
 The self-tests should provide a good guide to usage, they are under src/it/texttest.
 
 Basic usage:
@@ -14,7 +12,7 @@ Basic usage:
             <plugin>
                 <groupId>org.texttest</groupId>
                 <artifactId>texttest-maven-plugin</artifactId>
-                <version>1.0</version>
+                <version>1.1</version>
                 <executions>
                     <execution>
                         <id>run-texttests</id>

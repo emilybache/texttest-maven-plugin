@@ -12,3 +12,6 @@ java_tests_passing
 
 # Build a java project without using a 'run-its' profile
 run_without_profile
+
+# Build a python project with tests that pass that use capturemock
+using_capturemock

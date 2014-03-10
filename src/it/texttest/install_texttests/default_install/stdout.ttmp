@@ -4,11 +4,11 @@
 [INFO] Building Sample Project using TextTest Plugin 1.0-SNAPSHOT
 [INFO] ------------------------------------------------------------------------
 [INFO] 
-[INFO] --- texttest-maven-plugin:1.0-SNAPSHOT:install-texttests (default-cli) @ myapp ---
+[INFO] --- texttest-maven-plugin:1.2-SNAPSHOT:install-texttests (default-cli) @ myapp ---
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 6.197s
-[INFO] Finished at: Fri Mar 07 16:05:23 CET 2014
-[INFO] Final Memory: 13M/310M
+[INFO] Total time: 6.644s
+[INFO] Finished at: Mon Mar 10 11:26:11 CET 2014
+[INFO] Final Memory: 11M/239M
 [INFO] ------------------------------------------------------------------------

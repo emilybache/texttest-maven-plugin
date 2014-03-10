@@ -89,7 +89,6 @@
     <build>
         <pluginManagement>
             <plugins>
-
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-plugin-plugin</artifactId>
@@ -114,28 +113,23 @@
         <profile>
             <id>run-its</id>
             <build>
-
                 <plugins>
-
-                    <!-- Execute the TextTests -->
                     <plugin>
-                        <groupId>org.codehaus.mojo</groupId>
-                        <artifactId>exec-maven-plugin</artifactId>
-                        <version>1.2.1</version>
+                        <groupId>org.texttest</groupId>
+                        <artifactId>texttest-maven-plugin</artifactId>
+                        <version>1.1</version>
+                        <configuration>
+                            <appName>ttmp</appName>
+                            <installGlobally>true</installGlobally>
+                            <addClasspathToTextTestEnvironment>false</addClasspathToTextTestEnvironment>
+                        </configuration>
                         <executions>
                             <execution>
-                                <id>texttest</id>
+                                <id>run-texttests</id>
                                 <goals>
-                                    <goal>exec</goal>
+                                    <goal>install-texttests</goal>
+                                    <goal>run-texttests</goal>
                                 </goals>
-                                <phase>integration-test</phase>
-                                <configuration>
-                                    <executable>${basedir}/runAllTests.sh</executable>
-                                    <arguments>
-                                        <argument>${basedir}</argument>
-                                        <argument>ttmp</argument>
-                                    </arguments>
-                                </configuration>
                             </execution>
                         </executions>
                     </plugin>

@@ -6,14 +6,14 @@
 [INFO] 
 [INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ myapp ---
 [WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
-[INFO] skip non existing resourceDirectory /Users/emilyb/.texttest/tmp/ttmp.07Mar164417.99606/ttmp/whole_lifecycle/python_tests_passing/myapp/src/main/resources
+[INFO] skip non existing resourceDirectory /Users/emilyb/.texttest/tmp/ttmp.10Mar112600.16407/ttmp/whole_lifecycle/python_tests_passing/myapp/src/main/resources
 [INFO] 
 [INFO] --- maven-compiler-plugin:2.5.1:compile (default-compile) @ myapp ---
 [INFO] No sources to compile
 [INFO] 
 [INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ myapp ---
 [WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
-[INFO] skip non existing resourceDirectory /Users/emilyb/.texttest/tmp/ttmp.07Mar164417.99606/ttmp/whole_lifecycle/python_tests_passing/myapp/src/test/resources
+[INFO] skip non existing resourceDirectory /Users/emilyb/.texttest/tmp/ttmp.10Mar112600.16407/ttmp/whole_lifecycle/python_tests_passing/myapp/src/test/resources
 [INFO] 
 [INFO] --- maven-compiler-plugin:2.5.1:testCompile (default-testCompile) @ myapp ---
 [INFO] No sources to compile
@@ -23,23 +23,23 @@
 [INFO] 
 [INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ myapp ---
 [WARNING] JAR will be empty - no content was marked for inclusion!
-[INFO] Building jar: /Users/emilyb/.texttest/tmp/ttmp.07Mar164417.99606/ttmp/whole_lifecycle/python_tests_passing/myapp/target/myapp-1.0-SNAPSHOT.jar
+[INFO] Building jar: /Users/emilyb/.texttest/tmp/ttmp.10Mar112600.16407/ttmp/whole_lifecycle/python_tests_passing/myapp/target/myapp-1.0-SNAPSHOT.jar
 [INFO] 
-[INFO] --- texttest-maven-plugin:1.0-SNAPSHOT:install-texttests (run-texttests) @ myapp ---
-[INFO] Will install texttests globally with name myapp under TEXTTEST_ROOT /Users/emilyb/.texttest/tmp/ttmp.07Mar164417.99606/ttmp/whole_lifecycle/python_tests_passing/texttest_home
+[INFO] --- texttest-maven-plugin:1.2-SNAPSHOT:install-texttests (run-texttests) @ myapp ---
+[INFO] Will install texttests globally with name myapp under TEXTTEST_ROOT /Users/emilyb/.texttest/tmp/ttmp.10Mar112600.16407/ttmp/whole_lifecycle/python_tests_passing/texttest_home
 [INFO] 
-[INFO] --- texttest-maven-plugin:1.0-SNAPSHOT:run-texttests (run-texttests) @ myapp ---
+[INFO] --- texttest-maven-plugin:1.2-SNAPSHOT:run-texttests (run-texttests) @ myapp ---
 [INFO] found texttest on PATH at location: /Users/emilyb/.profile.d/bin/texttest.py
-[INFO] 2014-03-07 16:44:26,539 - Using local queues for Application MyApp, checkout /Users/emilyb/.texttest/tmp/ttmp.07Mar164417.99606/ttmp/whole_lifecycle/python_tests_passing/myapp
-[INFO] 2014-03-07 16:44:26,564 - Q: Submitting MyApp test-case hello to default local queue
-[INFO] 2014-03-07 16:44:26,956 - S: MyApp test-case hello succeeded on Emilys-MacBook-Pro.local
-[INFO] 2014-03-07 16:44:26,958 - Results:
-[INFO] 2014-03-07 16:44:26,958 - 
-[INFO] 2014-03-07 16:44:26,958 - Tests Run: 1
+[INFO] 2014-03-10 11:26:13,831 - Using local queues for Application MyApp, checkout /Users/emilyb/.texttest/tmp/ttmp.10Mar112600.16407/ttmp/whole_lifecycle/python_tests_passing/myapp
+[INFO] 2014-03-10 11:26:13,856 - Q: Submitting MyApp test-case hello to default local queue
+[INFO] 2014-03-10 11:26:14,171 - S: MyApp test-case hello succeeded on Emilys-MacBook-Pro.local
+[INFO] 2014-03-10 11:26:14,172 - Results:
+[INFO] 2014-03-10 11:26:14,172 - 
+[INFO] 2014-03-10 11:26:14,172 - Tests Run: 1
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 6.300s
-[INFO] Finished at: Fri Mar 07 16:44:27 CET 2014
+[INFO] Total time: 9.638s
+[INFO] Finished at: Mon Mar 10 11:26:14 CET 2014
 [INFO] Final Memory: 13M/245M
 [INFO] ------------------------------------------------------------------------

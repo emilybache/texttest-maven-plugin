@@ -4,12 +4,12 @@
 [INFO] Building Sample Project using TextTest Plugin 1.0-SNAPSHOT
 [INFO] ------------------------------------------------------------------------
 [INFO] 
-[INFO] --- texttest-maven-plugin:1.0-SNAPSHOT:install-texttests (default-cli) @ myapp ---
-[INFO] Will install texttests globally with name foobar under TEXTTEST_ROOT /Users/emilyb/.texttest/tmp/ttmp.07Mar160512.97014/ttmp/install_texttests/custom_appname/texttest_home
+[INFO] --- texttest-maven-plugin:1.2-SNAPSHOT:install-texttests (default-cli) @ myapp ---
+[INFO] Will install texttests globally with name foobar under TEXTTEST_ROOT /Users/emilyb/.texttest/tmp/ttmp.10Mar112600.16407/ttmp/install_texttests/custom_appname/texttest_home
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 6.418s
-[INFO] Finished at: Fri Mar 07 16:05:23 CET 2014
-[INFO] Final Memory: 11M/239M
+[INFO] Total time: 6.172s
+[INFO] Finished at: Mon Mar 10 11:26:11 CET 2014
+[INFO] Final Memory: 11M/245M
 [INFO] ------------------------------------------------------------------------
