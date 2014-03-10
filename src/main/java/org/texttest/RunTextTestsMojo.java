@@ -155,7 +155,7 @@ public class RunTextTestsMojo extends AbstractTextTestMojo {
                 "-a", appName,
                 "-b", batchSessionName,
                 "-c", mavenProject.getBasedir().toString(),
-                "-d", getTexttestRootPath().toString()
+                "-d", texttestLocation + System.getProperty("path.separator") + getTexttestRootPath().toString()
         };
         getLog().debug("Will start texttest with this command: " + Arrays.toString(arguments));
         ProcessBuilder textTest = new ProcessBuilder(arguments);
