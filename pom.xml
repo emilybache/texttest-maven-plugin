@@ -5,17 +5,39 @@
     <artifactId>texttest-maven-plugin</artifactId>
     <version>1.2-SNAPSHOT</version>
     <packaging>maven-plugin</packaging>
+    <description>This maven plugin lets you run tests created with TextTest</description>
 
     <name>TextTest Maven Plugin</name>
 
     <url>http://texttest.org</url>
+
+    <parent>
+      <groupId>org.sonatype.oss</groupId>
+      <artifactId>oss-parent</artifactId>
+      <version>7</version>
+    </parent>
 
     <scm>
         <connection>scm:git:https://github.com/emilybache/texttest-maven-plugin.git</connection>
         <url>scm:git:https://github.com/emilybache/texttest-maven-plugin.git</url>
         <developerConnection>scm:git:https://github.com/emilybache/texttest-maven-plugin.git</developerConnection>
       <tag>HEAD</tag>
-  </scm>
+    </scm>
+    <licenses>
+        <license>
+            <name>GNU LGPL v3</name>
+            <url>http://www.gnu.org/copyleft/lesser.html</url>
+            <distribution>repo</distribution>
+        </license>
+    </licenses>
+
+    <developers>
+        <developer>
+            <id>emilybache</id>
+            <name>Emily Bache</name>
+            <email>emily.bache@cantab.net</email>
+        </developer>
+    </developers>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -70,7 +92,6 @@
             <version>2.8</version>
         </dependency>
 
-        <!-- this dependency is not yet published. Install texttest by hand, and remove it. -->
         <dependency>
             <groupId>org.texttest</groupId>
             <artifactId>texttest-runner</artifactId>
@@ -134,8 +155,35 @@
                         </executions>
                     </plugin>
                 </plugins>
-
             </build>
         </profile>
+
+        <profile>
+        <id>release-sign-artifacts</id>
+        <activation>
+          <property>
+            <name>performRelease</name>
+            <value>true</value>
+          </property>
+        </activation>
+        <build>
+          <plugins>
+            <plugin>
+              <groupId>org.apache.maven.plugins</groupId>
+              <artifactId>maven-gpg-plugin</artifactId>
+              <version>1.1</version>
+              <executions>
+                <execution>
+                  <id>sign-artifacts</id>
+                  <phase>verify</phase>
+                  <goals>
+                    <goal>sign</goal>
+                  </goals>
+                </execution>
+              </executions>
+            </plugin>
+          </plugins>
+        </build>
+      </profile>
     </profiles>
 </project>

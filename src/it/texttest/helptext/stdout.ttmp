@@ -1,4 +1,6 @@
 [INFO] Scanning for projects...
+[INFO] 
+[INFO] Using the builder org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder with a thread count of 1
 [INFO]                                                                         
 [INFO] ------------------------------------------------------------------------
 [INFO] Building Sample Project using TextTest Plugin 1.0-SNAPSHOT
@@ -8,7 +10,7 @@
 [INFO] org.texttest:texttest-maven-plugin:1.2-SNAPSHOT
 
 Name: TextTest Maven Plugin
-Description: (no description available)
+Description: This maven plugin lets you run tests created with TextTest
 Group Id: org.texttest
 Artifact Id: texttest-maven-plugin
 Version: 1.2-SNAPSHOT
@@ -120,7 +122,7 @@ texttest:run-texttests
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 1.055s
-[INFO] Finished at: Mon Mar 10 11:29:10 CET 2014
-[INFO] Final Memory: 10M/245M
+[INFO] Total time: 3.700 s
+[INFO] Finished at: 2014-03-13T21:23:15+01:00
+[INFO] Final Memory: 9M/245M
 [INFO] ------------------------------------------------------------------------
