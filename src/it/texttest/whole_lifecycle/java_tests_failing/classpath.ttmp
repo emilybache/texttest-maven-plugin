@@ -1,1 +1,1 @@
--cp /Users/emilyb/.texttest/tmp/ttmp.09Mar212833.5320/ttmp/whole_lifecycle/java_tests_failing/myapp/target/classes:
+-cp /Users/emilyb/.texttest/tmp/ttmp.13Mar205516.21962/ttmp/whole_lifecycle/java_tests_failing/myapp/target/classes:/Users/emilyb/.texttest/tmp/ttmp.13Mar205516.21962/ttmp/whole_lifecycle/java_tests_failing/myapp/target/test-classes:
