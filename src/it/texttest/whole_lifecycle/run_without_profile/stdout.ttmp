@@ -25,10 +25,10 @@
 [INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ myapp ---
 [INFO] Building jar: /Users/emilyb/.texttest/tmp/ttmp.10Mar112600.16407/ttmp/whole_lifecycle/run_without_profile/myapp/target/myapp-1.0-SNAPSHOT.jar
 [INFO] 
-[INFO] --- texttest-maven-plugin:1.2-SNAPSHOT:install-texttests (run-texttests) @ myapp ---
+[INFO] --- texttest-maven-plugin:1.4-SNAPSHOT:install-texttests (run-texttests) @ myapp ---
 [INFO] Will install texttests globally with name myapp under TEXTTEST_ROOT /Users/emilyb/.texttest/tmp/ttmp.10Mar112600.16407/ttmp/whole_lifecycle/run_without_profile/texttest_home
 [INFO] 
-[INFO] --- texttest-maven-plugin:1.2-SNAPSHOT:run-texttests (run-texttests) @ myapp ---
+[INFO] --- texttest-maven-plugin:1.4-SNAPSHOT:run-texttests (run-texttests) @ myapp ---
 [INFO] found texttest on PATH at location: /Users/emilyb/.profile.d/bin/texttest.py
 [INFO] No dependencies found.
 [INFO] 2014-03-10 11:26:20,444 - Using local queues for Application MyApp, checkout /Users/emilyb/.texttest/tmp/ttmp.10Mar112600.16407/ttmp/whole_lifecycle/run_without_profile/myapp
@@ -47,7 +47,7 @@
 [INFO] Finished at: Mon Mar 10 11:26:21 CET 2014
 [INFO] Final Memory: 19M/245M
 [INFO] ------------------------------------------------------------------------
-[ERROR] Failed to execute goal org.texttest:texttest-maven-plugin:1.2-SNAPSHOT:run-texttests (run-texttests) on project myapp: There were test failures -> [Help 1]
+[ERROR] Failed to execute goal org.texttest:texttest-maven-plugin:1.4-SNAPSHOT:run-texttests (run-texttests) on project myapp: There were test failures -> [Help 1]
 [ERROR] 
 [ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
 [ERROR] Re-run Maven using the -X switch to enable full debug logging.

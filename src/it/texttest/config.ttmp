@@ -35,4 +35,5 @@ classpath:{INTERNAL writedir}{REPLACE <sandbox>}
 classpath:[\w\d\.\/]+\/\.m2\/repository{REPLACE <m2 repository>}
 catalogue:texttest\.py{->}texttest-texttest-runner-jar-.*marker
 catalogue:-*myapp\..*
+catalogue:\.bzrignore
 [end]

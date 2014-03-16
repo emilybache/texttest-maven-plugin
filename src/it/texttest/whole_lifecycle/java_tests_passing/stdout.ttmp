@@ -25,10 +25,10 @@
 [INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ myapp ---
 [INFO] Building jar: /Users/emilyb/.texttest/tmp/ttmp.10Mar112600.16407/ttmp/whole_lifecycle/java_tests_passing/myapp/target/myapp-1.0-SNAPSHOT.jar
 [INFO] 
-[INFO] --- texttest-maven-plugin:1.2-SNAPSHOT:install-texttests (run-texttests) @ myapp ---
+[INFO] --- texttest-maven-plugin:1.4-SNAPSHOT:install-texttests (run-texttests) @ myapp ---
 [INFO] Will install texttests globally with name myapp under TEXTTEST_ROOT /Users/emilyb/.texttest/tmp/ttmp.10Mar112600.16407/ttmp/whole_lifecycle/java_tests_passing/texttest_home
 [INFO] 
-[INFO] --- texttest-maven-plugin:1.2-SNAPSHOT:run-texttests (run-texttests) @ myapp ---
+[INFO] --- texttest-maven-plugin:1.4-SNAPSHOT:run-texttests (run-texttests) @ myapp ---
 [INFO] found texttest on PATH at location: /Users/emilyb/.profile.d/bin/texttest.py
 [INFO] 2014-03-10 11:26:20,284 - Using local queues for Application MyApp, checkout /Users/emilyb/.texttest/tmp/ttmp.10Mar112600.16407/ttmp/whole_lifecycle/java_tests_passing/myapp
 [INFO] 2014-03-10 11:26:20,288 - Q: Submitting MyApp test-case hello to default local queue

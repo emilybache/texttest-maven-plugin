@@ -25,10 +25,10 @@
 [WARNING] JAR will be empty - no content was marked for inclusion!
 [INFO] Building jar: /Users/emilyb/.texttest/tmp/ttmp.10Mar112600.16407/ttmp/whole_lifecycle/using_capturemock/myapp/target/myapp-1.0-SNAPSHOT.jar
 [INFO] 
-[INFO] --- texttest-maven-plugin:1.2-SNAPSHOT:install-texttests (run-texttests) @ myapp ---
+[INFO] --- texttest-maven-plugin:1.4-SNAPSHOT:install-texttests (run-texttests) @ myapp ---
 [INFO] Will install texttests globally with name myapp under TEXTTEST_ROOT /Users/emilyb/.texttest/tmp/ttmp.10Mar112600.16407/ttmp/whole_lifecycle/using_capturemock/texttest_home
 [INFO] 
-[INFO] --- texttest-maven-plugin:1.2-SNAPSHOT:run-texttests (run-texttests) @ myapp ---
+[INFO] --- texttest-maven-plugin:1.4-SNAPSHOT:run-texttests (run-texttests) @ myapp ---
 [INFO] texttest.py not found on PATH /Users/emilyb/.texttest/tmp/ttmp.10Mar112600.16407/ttmp/whole_lifecycle/using_capturemock:/Library/Frameworks/Python.framework/Versions/2.7/bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin
 [INFO] Configured Artifact: org.texttest:texttest-runner:3.26:jar
 [INFO] Unpacking /Users/emilyb/.m2/repository/org/texttest/texttest-runner/3.26/texttest-runner-3.26.jar to /Users/emilyb/.texttest/tmp/ttmp.10Mar112600.16407/ttmp/whole_lifecycle/using_capturemock/myapp/target/dependency with includes "" and excludes ""
