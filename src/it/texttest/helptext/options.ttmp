@@ -1,1 +1,1 @@
-help:describe -Ddetail -Dplugin=org.texttest:texttest-maven-plugin:1.4-SNAPSHOT
+help:describe -Ddetail -Dplugin=org.texttest:texttest-maven-plugin:1.5-SNAPSHOT

@@ -4,7 +4,7 @@
 [INFO] Building Sample Project using TextTest Plugin 1.0-SNAPSHOT
 [INFO] ------------------------------------------------------------------------
 [INFO] 
-[INFO] --- texttest-maven-plugin:1.4-SNAPSHOT:install-texttests (default-cli) @ myapp ---
+[INFO] --- texttest-maven-plugin:1.5-SNAPSHOT:install-texttests (default-cli) @ myapp ---
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------

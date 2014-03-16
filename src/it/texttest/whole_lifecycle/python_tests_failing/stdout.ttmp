@@ -25,10 +25,10 @@
 [WARNING] JAR will be empty - no content was marked for inclusion!
 [INFO] Building jar: /Users/emilyb/.texttest/tmp/ttmp.10Mar112600.16407/ttmp/whole_lifecycle/python_tests_failing/myapp/target/myapp-1.0-SNAPSHOT.jar
 [INFO] 
-[INFO] --- texttest-maven-plugin:1.4-SNAPSHOT:install-texttests (run-texttests) @ myapp ---
+[INFO] --- texttest-maven-plugin:1.5-SNAPSHOT:install-texttests (run-texttests) @ myapp ---
 [INFO] Will install texttests globally with name myapp under TEXTTEST_ROOT /Users/emilyb/.texttest/tmp/ttmp.10Mar112600.16407/ttmp/whole_lifecycle/python_tests_failing/texttest_home
 [INFO] 
-[INFO] --- texttest-maven-plugin:1.4-SNAPSHOT:run-texttests (run-texttests) @ myapp ---
+[INFO] --- texttest-maven-plugin:1.5-SNAPSHOT:run-texttests (run-texttests) @ myapp ---
 [INFO] found texttest on PATH at location: /Users/emilyb/.profile.d/bin/texttest.py
 [INFO] 2014-03-10 11:26:14,215 - Using local queues for Application MyApp, checkout /Users/emilyb/.texttest/tmp/ttmp.10Mar112600.16407/ttmp/whole_lifecycle/python_tests_failing/myapp
 [INFO] 2014-03-10 11:26:14,235 - Q: Submitting MyApp test-case hello to default local queue
@@ -46,7 +46,7 @@
 [INFO] Finished at: Mon Mar 10 11:26:15 CET 2014
 [INFO] Final Memory: 13M/245M
 [INFO] ------------------------------------------------------------------------
-[ERROR] Failed to execute goal org.texttest:texttest-maven-plugin:1.4-SNAPSHOT:run-texttests (run-texttests) on project myapp: There were test failures -> [Help 1]
+[ERROR] Failed to execute goal org.texttest:texttest-maven-plugin:1.5-SNAPSHOT:run-texttests (run-texttests) on project myapp: There were test failures -> [Help 1]
 [ERROR] 
 [ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
 [ERROR] Re-run Maven using the -X switch to enable full debug logging.
