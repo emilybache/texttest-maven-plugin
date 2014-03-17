@@ -30,13 +30,13 @@ public class RunTextTestsMojo extends AbstractTextTestMojo {
     /**
      * The name of the batch session configured in the texttest config file.
      */
-    @Parameter(alias="batch_session_name", defaultValue = "all")
+    @Parameter(property="batch_session_name", defaultValue = "all")
     private String batchSessionName;
 
     /**
      * Where texttest should put test result files and files relating to test runs.
      */
-    @Parameter(defaultValue = "${project.basedir}/target/sandbox")
+    @Parameter(defaultValue = "${project.basedir}/target/sandbox", property="texttest_sandbox")
     private String sandbox;
 
     /**

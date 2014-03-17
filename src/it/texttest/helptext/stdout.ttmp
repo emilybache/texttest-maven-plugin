@@ -84,6 +84,7 @@ texttest:run-texttests
       extension of the texttest config file.
 
     batchSessionName (Default: all)
+      User property: batch_session_name
       The name of the batch session configured in the texttest config file.
 
     extraSearchDirectory (Default: ${basedir}/target/texttest_extra_config)
@@ -94,6 +95,7 @@ texttest:run-texttests
       'add_classpath' to true.
 
     sandbox (Default: ${project.basedir}/target/sandbox)
+      User property: texttest_sandbox
       Where texttest should put test result files and files relating to test
       runs.
 
@@ -122,7 +124,7 @@ texttest:run-texttests
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 3.700 s
-[INFO] Finished at: 2014-03-13T21:23:15+01:00
+[INFO] Total time: 3.815 s
+[INFO] Finished at: 2014-03-17T09:02:28+01:00
 [INFO] Final Memory: 9M/245M
 [INFO] ------------------------------------------------------------------------
