@@ -12,7 +12,7 @@ Basic usage:
             <plugin>
                 <groupId>org.texttest</groupId>
                 <artifactId>texttest-maven-plugin</artifactId>
-                <version>1.1</version>
+                <version>1.4</version>
                 <executions>
                     <execution>
                         <id>run-texttests</id>
