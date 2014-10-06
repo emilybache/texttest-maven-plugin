@@ -21,6 +21,7 @@ classpath:myapp/target/texttest_extra_config/interpreter_options.myapp
 [end]
 
 [run_dependent_text]
+stderr:support was removed in 8.0
 stdout:Total time: [\d\.\w\s]+{REPLACE Total time: <time>}
 stdout:Finished at: [\d\.\w\s:+-]+{REPLACE Finished at: <datestamp>}
 stdout:Final Memory: [\w\d\/]+{REPLACE Final Memory: <memory>}

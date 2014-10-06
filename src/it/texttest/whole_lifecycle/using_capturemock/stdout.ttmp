@@ -6,16 +6,16 @@
 [INFO] 
 [INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ myapp ---
 [WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
-[INFO] skip non existing resourceDirectory /Users/emilyb/.texttest/tmp/ttmp.10Mar112600.16407/ttmp/whole_lifecycle/using_capturemock/myapp/src/main/resources
+[INFO] skip non existing resourceDirectory /Users/emilyb/workspace/texttest-maven-plugin/target/sandbox/ttmp.06Oct112845.20947/ttmp/whole_lifecycle/using_capturemock/myapp/src/main/resources
 [INFO] 
-[INFO] --- maven-compiler-plugin:2.5.1:compile (default-compile) @ myapp ---
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ myapp ---
 [INFO] No sources to compile
 [INFO] 
 [INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ myapp ---
 [WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
-[INFO] skip non existing resourceDirectory /Users/emilyb/.texttest/tmp/ttmp.10Mar112600.16407/ttmp/whole_lifecycle/using_capturemock/myapp/src/test/resources
+[INFO] skip non existing resourceDirectory /Users/emilyb/workspace/texttest-maven-plugin/target/sandbox/ttmp.06Oct112845.20947/ttmp/whole_lifecycle/using_capturemock/myapp/src/test/resources
 [INFO] 
-[INFO] --- maven-compiler-plugin:2.5.1:testCompile (default-testCompile) @ myapp ---
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ myapp ---
 [INFO] No sources to compile
 [INFO] 
 [INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ myapp ---
@@ -23,25 +23,24 @@
 [INFO] 
 [INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ myapp ---
 [WARNING] JAR will be empty - no content was marked for inclusion!
-[INFO] Building jar: /Users/emilyb/.texttest/tmp/ttmp.10Mar112600.16407/ttmp/whole_lifecycle/using_capturemock/myapp/target/myapp-1.0-SNAPSHOT.jar
+[INFO] Building jar: /Users/emilyb/workspace/texttest-maven-plugin/target/sandbox/ttmp.06Oct112845.20947/ttmp/whole_lifecycle/using_capturemock/myapp/target/myapp-1.0-SNAPSHOT.jar
 [INFO] 
 [INFO] --- texttest-maven-plugin:1.5-SNAPSHOT:install-texttests (run-texttests) @ myapp ---
-[INFO] Will install texttests globally with name myapp under TEXTTEST_ROOT /Users/emilyb/.texttest/tmp/ttmp.10Mar112600.16407/ttmp/whole_lifecycle/using_capturemock/texttest_home
+[INFO] Will install texttests globally with name myapp under TEXTTEST_ROOT /Users/emilyb/workspace/texttest-maven-plugin/target/sandbox/ttmp.06Oct112845.20947/ttmp/whole_lifecycle/using_capturemock/texttest_home
+[WARNING] TEXTTEST_ROOT did not exist, creating /Users/emilyb/workspace/texttest-maven-plugin/target/sandbox/ttmp.06Oct112845.20947/ttmp/whole_lifecycle/using_capturemock/texttest_home
 [INFO] 
 [INFO] --- texttest-maven-plugin:1.5-SNAPSHOT:run-texttests (run-texttests) @ myapp ---
-[INFO] texttest.py not found on PATH /Users/emilyb/.texttest/tmp/ttmp.10Mar112600.16407/ttmp/whole_lifecycle/using_capturemock:/Library/Frameworks/Python.framework/Versions/2.7/bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin
-[INFO] Configured Artifact: org.texttest:texttest-runner:3.26:jar
-[INFO] Unpacking /Users/emilyb/.m2/repository/org/texttest/texttest-runner/3.26/texttest-runner-3.26.jar to /Users/emilyb/.texttest/tmp/ttmp.10Mar112600.16407/ttmp/whole_lifecycle/using_capturemock/myapp/target/dependency with includes "" and excludes ""
-[INFO] 2014-03-10 11:26:20,466 - Using local queues for Application MyApp, checkout /Users/emilyb/.texttest/tmp/ttmp.10Mar112600.16407/ttmp/whole_lifecycle/using_capturemock/myapp
-[INFO] 2014-03-10 11:26:20,469 - Q: Submitting MyApp test-case hello to default local queue
-[INFO] 2014-03-10 11:26:20,788 - S: MyApp test-case hello succeeded on Emilys-MacBook-Pro.local
-[INFO] 2014-03-10 11:26:20,789 - Results:
-[INFO] 2014-03-10 11:26:20,789 - 
-[INFO] 2014-03-10 11:26:20,789 - Tests Run: 1
+[INFO] found texttest on PATH at location: /usr/local/bin/texttest
+[INFO] 2014-10-06 11:29:12,796 - Using local queues for Application MyApp, checkout /Users/emilyb/workspace/texttest-maven-plugin/target/sandbox/ttmp.06Oct112845.20947/ttmp/whole_lifecycle/using_capturemock/myapp
+[INFO] 2014-10-06 11:29:12,822 - Q: Submitting MyApp test-case hello to default local queue
+[INFO] 2014-10-06 11:29:13,910 - S: MyApp test-case hello succeeded on Emilys-MacBook-Pro
+[INFO] 2014-10-06 11:29:13,911 - Results:
+[INFO] 2014-10-06 11:29:13,912 - 
+[INFO] 2014-10-06 11:29:13,912 - Tests Run: 1
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 6.190s
-[INFO] Finished at: Mon Mar 10 11:26:21 CET 2014
-[INFO] Final Memory: 16M/310M
+[INFO] Total time: 9.966 s
+[INFO] Finished at: 2014-10-06T11:29:14+02:00
+[INFO] Final Memory: 12M/245M
 [INFO] ------------------------------------------------------------------------

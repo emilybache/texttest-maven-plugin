@@ -93,12 +93,6 @@
         </dependency>
 
         <dependency>
-            <groupId>org.texttest</groupId>
-            <artifactId>texttest-runner</artifactId>
-            <version>3.26</version>
-        </dependency>
-
-        <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
             <version>4.8.2</version>
@@ -112,6 +106,7 @@
             <plugin>
               <groupId>org.apache.maven.plugins</groupId>
               <artifactId>maven-source-plugin</artifactId>
+                <version>2.3</version>
               <executions>
                 <execution>
                   <id>attach-sources</id>
@@ -124,6 +119,7 @@
             <plugin>
               <groupId>org.apache.maven.plugins</groupId>
               <artifactId>maven-javadoc-plugin</artifactId>
+                <version>2.10.1</version>
               <executions>
                 <execution>
                   <id>attach-javadocs</id>
@@ -165,7 +161,7 @@
                     <plugin>
                         <groupId>org.texttest</groupId>
                         <artifactId>texttest-maven-plugin</artifactId>
-                        <version>1.1</version>
+                        <version>1.4</version>
                         <configuration>
                             <appName>ttmp</appName>
                             <installGlobally>true</installGlobally>
@@ -177,6 +173,21 @@
                                 <goals>
                                     <goal>install-texttests</goal>
                                     <goal>run-texttests</goal>
+                                </goals>
+                            </execution>
+                        </executions>
+                    </plugin>
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-invoker-plugin</artifactId>
+                        <version>1.8</version>
+                        <!-- install this plugin before we try to run the integration tests that use it -->
+                        <executions>
+                            <execution>
+                                <phase>pre-integration-test</phase>
+                                <id>local-install</id>
+                                <goals>
+                                    <goal>install</goal>
                                 </goals>
                             </execution>
                         </executions>
@@ -198,7 +209,7 @@
             <plugin>
               <groupId>org.apache.maven.plugins</groupId>
               <artifactId>maven-gpg-plugin</artifactId>
-              <version>1.1</version>
+              <version>1.5</version>
               <executions>
                 <execution>
                   <id>sign-artifacts</id>
@@ -209,6 +220,7 @@
                 </execution>
               </executions>
             </plugin>
+
           </plugins>
         </build>
       </profile>

@@ -5,14 +5,14 @@
 [INFO] ------------------------------------------------------------------------
 [INFO] 
 [INFO] --- texttest-maven-plugin:1.5-SNAPSHOT:run-texttests (default-cli) @ myapp ---
-[INFO] found texttest on PATH at location: /Users/emilyb/.profile.d/bin/texttest.py
-[INFO] Could not read application 'myapp'. No file named config.myapp was found under /Users/emilyb/.texttest/tmp/ttmp.10Mar112600.16407/ttmp/run_texttests/default_run/texttest_home.
+[INFO] found texttest on PATH at location: /usr/local/bin/texttest
+[INFO] Could not read application 'myapp'. No file named config.myapp was found under /Users/emilyb/.texttest/tmp/ttmp.06Oct111330.17257/ttmp/run_texttests/default_run/texttest_home.
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD FAILURE
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 7.957s
-[INFO] Finished at: Mon Mar 10 11:26:13 CET 2014
-[INFO] Final Memory: 17M/310M
+[INFO] Total time: 1.705 s
+[INFO] Finished at: 2014-10-06T11:13:34+02:00
+[INFO] Final Memory: 15M/309M
 [INFO] ------------------------------------------------------------------------
 [ERROR] Failed to execute goal org.texttest:texttest-maven-plugin:1.5-SNAPSHOT:run-texttests (default-cli) on project myapp: There were test failures -> [Help 1]
 [ERROR] 

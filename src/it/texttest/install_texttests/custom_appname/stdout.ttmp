@@ -5,11 +5,12 @@
 [INFO] ------------------------------------------------------------------------
 [INFO] 
 [INFO] --- texttest-maven-plugin:1.5-SNAPSHOT:install-texttests (default-cli) @ myapp ---
-[INFO] Will install texttests globally with name foobar under TEXTTEST_ROOT /Users/emilyb/.texttest/tmp/ttmp.10Mar112600.16407/ttmp/install_texttests/custom_appname/texttest_home
+[INFO] Will install texttests globally with name foobar under TEXTTEST_ROOT /Users/emilyb/workspace/texttest-maven-plugin/target/sandbox/ttmp.06Oct102907.12091/ttmp/install_texttests/custom_appname/texttest_home
+[WARNING] TEXTTEST_ROOT did not exist, creating /Users/emilyb/workspace/texttest-maven-plugin/target/sandbox/ttmp.06Oct102907.12091/ttmp/install_texttests/custom_appname/texttest_home
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 6.172s
-[INFO] Finished at: Mon Mar 10 11:26:11 CET 2014
+[INFO] Total time: 6.018 s
+[INFO] Finished at: 2014-10-06T10:29:18+02:00
 [INFO] Final Memory: 11M/245M
 [INFO] ------------------------------------------------------------------------

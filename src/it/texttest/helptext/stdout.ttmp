@@ -1,6 +1,4 @@
 [INFO] Scanning for projects...
-[INFO] 
-[INFO] Using the builder org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder with a thread count of 1
 [INFO]                                                                         
 [INFO] ------------------------------------------------------------------------
 [INFO] Building Sample Project using TextTest Plugin 1.0-SNAPSHOT
@@ -99,6 +97,13 @@ texttest:run-texttests
       Where texttest should put test result files and files relating to test
       runs.
 
+    texttestExecutable
+      User property: texttest_executable
+      The preferred way is to put the 'texttest' executable on your $PATH,
+      which will happen if you install it with 'pip install texttest' Instead,
+      you can use this property to specify a complete path to the 'texttest'
+      executable.
+
     texttestLocation (Default: ${basedir}/src/it/texttest)
       User property: texttest_location
       Where the texttests for this project are located - ie the folder where
@@ -124,7 +129,7 @@ texttest:run-texttests
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 3.815 s
-[INFO] Finished at: 2014-03-17T09:02:28+01:00
-[INFO] Final Memory: 9M/245M
+[INFO] Total time: 4.912 s
+[INFO] Finished at: 2014-10-06T11:39:56+02:00
+[INFO] Final Memory: 10M/245M
 [INFO] ------------------------------------------------------------------------

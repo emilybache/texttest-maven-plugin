@@ -7,8 +7,14 @@ The following new files/directories were created:
 ----------------Hello.class
 ------------maven-archiver
 ----------------pom.properties
+------------maven-status
+----------------maven-compiler-plugin
+--------------------compile
+------------------------default-compile
+----------------------------createdFiles.lst
+----------------------------inputFiles.lst
 ------------sandbox
-----------------myapp.09Mar212852.5503
+----------------myapp.06Oct112915.21198
 --------------------myapp
 ------------------------hello
 ----------------------------stderr.myapp

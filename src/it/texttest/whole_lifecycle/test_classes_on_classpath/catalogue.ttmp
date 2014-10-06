@@ -5,8 +5,14 @@ The following new files/directories were created:
 ------------myapp-1.0-SNAPSHOT.jar
 ------------maven-archiver
 ----------------pom.properties
+------------maven-status
+----------------maven-compiler-plugin
+--------------------testCompile
+------------------------default-testCompile
+----------------------------createdFiles.lst
+----------------------------inputFiles.lst
 ------------sandbox
-----------------myapp.10Mar133350.21086
+----------------myapp.06Oct112916.21219
 --------------------myapp
 ------------------------hello
 ----------------------------stderr.myapp

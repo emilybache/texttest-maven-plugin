@@ -5,18 +5,14 @@
 [INFO] ------------------------------------------------------------------------
 [INFO] 
 [INFO] --- texttest-maven-plugin:1.5-SNAPSHOT:run-texttests (default-cli) @ myapp ---
-[INFO] texttest.py not found on PATH /Users/emilyb/.texttest/tmp/ttmp.10Mar112819.16658/ttmp/run_texttests/texttest_not_on_path:/Library/Frameworks/Python.framework/Versions/2.7/bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin
-[INFO] Configured Artifact: org.texttest:texttest-runner:3.26:jar
-[INFO] Unpacking /Users/emilyb/.m2/repository/org/texttest/texttest-runner/3.26/texttest-runner-3.26.jar to /Users/emilyb/.texttest/tmp/ttmp.10Mar112819.16658/ttmp/run_texttests/texttest_not_on_path/myapp/target/dependency with includes "" and excludes ""
-[INFO] Could not read application 'myapp'. No file named config.myapp was found under /Users/emilyb/.texttest/tmp/ttmp.10Mar112819.16658/ttmp/run_texttests/texttest_not_on_path/texttest_home.
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD FAILURE
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 2.523s
-[INFO] Finished at: Mon Mar 10 11:28:24 CET 2014
-[INFO] Final Memory: 16M/310M
+[INFO] Total time: 7.579 s
+[INFO] Finished at: 2014-10-06T11:37:09+02:00
+[INFO] Final Memory: 11M/245M
 [INFO] ------------------------------------------------------------------------
-[ERROR] Failed to execute goal org.texttest:texttest-maven-plugin:1.5-SNAPSHOT:run-texttests (default-cli) on project myapp: There were test failures -> [Help 1]
+[ERROR] Failed to execute goal org.texttest:texttest-maven-plugin:1.5-SNAPSHOT:run-texttests (default-cli) on project myapp: Unable to run texttest. Parameter 'texttestExecutable' is specified as /usr/bin/foobar but this file is not found. Please use 'pip install texttest' to install texttest on your system -> [Help 1]
 [ERROR] 
 [ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
 [ERROR] Re-run Maven using the -X switch to enable full debug logging.

@@ -67,6 +67,14 @@ public class RunTextTestsMojo extends AbstractTextTestMojo {
     @Parameter(property="texttest_version", defaultValue = "3.26")
     String texttestVersion;
 
+    /**
+     * The preferred way is to put the 'texttest' executable on your $PATH, which will happen if you install it with
+     *     'pip install texttest'
+     * Instead, you can use this property to specify a complete path to the 'texttest' executable.
+     */
+    @Parameter(property="texttest_executable")
+    String texttestExecutable;
+
 
     @Override
     public void execute() throws MojoExecutionException, MojoFailureException {
@@ -78,36 +86,32 @@ public class RunTextTestsMojo extends AbstractTextTestMojo {
     }
 
     Path findTextTestExecutable() throws MojoExecutionException {
-        Path textTestExecutable = findTextTestOnPath();
-        if (textTestExecutable == null) {
-            executeMojo(
-                    plugin(groupId("org.apache.maven.plugins"), artifactId("maven-dependency-plugin"), version("2.8")),
-                    goal("unpack"),
-                    configuration(element(name("artifactItems"),
-                            element(name("artifactItem"),
-                                    element(name("artifactId"), "texttest-runner"),
-                                    element(name("groupId"), "org.texttest"),
-                                    element(name("version"), texttestVersion)))),
-                    executionEnvironment(mavenProject, mavenSession, pluginManager));
-            textTestExecutable = mavenProject.getBasedir().toPath().resolve("target/dependency/bin/texttest.py");
-            if (!Files.exists(textTestExecutable)) {
-                throw new MojoExecutionException("unpacked dependency 'texttest-runner' but it did not contain the texttest.py executable");
+        if (texttestExecutable != null) {
+            File executable = new File(texttestExecutable);
+            if (executable.exists()) {
+                return executable.toPath();
+            } else {
+                throw new MojoExecutionException("Unable to run texttest. Parameter 'texttestExecutable' is specified as " + texttestExecutable + " but this file is not found. Please use 'pip install texttest' to install texttest on your system");
             }
         }
+        Path textTestOnPath = findTextTestOnPath();
+        if (textTestOnPath == null) {
+            throw new MojoExecutionException("Unable to run texttest. 'texttestExecutable' parameter is not specified, and 'texttest' was not found on your $PATH. Please use 'pip install texttest' to install texttest on your system");
+        }
 
-        return textTestExecutable;
+        return textTestOnPath;
     }
 
     Path findTextTestOnPath() {
         String PATH = System.getenv("PATH");
         for (String pathDir: PATH.split(System.getProperty("path.separator"))) {
-            Path possibleLocation = new File(pathDir).toPath().resolve("texttest.py");
+            Path possibleLocation = new File(pathDir).toPath().resolve("texttest");
             if (Files.exists(possibleLocation)) {
                 getLog().info("found texttest on PATH at location: " + possibleLocation);
                 return possibleLocation;
             }
         }
-        getLog().info("texttest.py not found on PATH " + PATH);
+        getLog().info("texttest not found on PATH " + PATH);
         return null;
     }
 
