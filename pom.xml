@@ -3,7 +3,7 @@
 
     <groupId>org.texttest</groupId>
     <artifactId>texttest-maven-plugin</artifactId>
-    <version>1.5-SNAPSHOT</version>
+    <version>1.5</version>
     <packaging>maven-plugin</packaging>
     <description>This maven plugin lets you run tests created with TextTest</description>
 
