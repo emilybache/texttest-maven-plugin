@@ -4,7 +4,7 @@
 [INFO] Building Sample Project using TextTest Plugin 1.0-SNAPSHOT
 [INFO] ------------------------------------------------------------------------
 [INFO] 
-[INFO] --- texttest-maven-plugin:1.5-SNAPSHOT:run-texttests (default-cli) @ myapp ---
+[INFO] --- texttest-maven-plugin:1.7-SNAPSHOT:run-texttests (default-cli) @ myapp ---
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD FAILURE
 [INFO] ------------------------------------------------------------------------
@@ -12,7 +12,7 @@
 [INFO] Finished at: 2014-10-06T11:37:09+02:00
 [INFO] Final Memory: 11M/245M
 [INFO] ------------------------------------------------------------------------
-[ERROR] Failed to execute goal org.texttest:texttest-maven-plugin:1.5-SNAPSHOT:run-texttests (default-cli) on project myapp: Unable to run texttest. Parameter 'texttestExecutable' is specified as /usr/bin/foobar but this file is not found. Please use 'pip install texttest' to install texttest on your system -> [Help 1]
+[ERROR] Failed to execute goal org.texttest:texttest-maven-plugin:1.7-SNAPSHOT:run-texttests (default-cli) on project myapp: Unable to run texttest. Parameter 'texttestExecutable' is specified as /usr/bin/foobar but this file is not found. Please use 'pip install texttest' to install texttest on your system -> [Help 1]
 [ERROR] 
 [ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
 [ERROR] Re-run Maven using the -X switch to enable full debug logging.

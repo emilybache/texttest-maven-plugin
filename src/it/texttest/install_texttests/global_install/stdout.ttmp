@@ -4,7 +4,7 @@
 [INFO] Building Sample Project using TextTest Plugin 1.0-SNAPSHOT
 [INFO] ------------------------------------------------------------------------
 [INFO] 
-[INFO] --- texttest-maven-plugin:1.5-SNAPSHOT:install-texttests (default-cli) @ myapp ---
+[INFO] --- texttest-maven-plugin:1.7-SNAPSHOT:install-texttests (default-cli) @ myapp ---
 [INFO] Will install texttests globally with name myapp under TEXTTEST_ROOT /Users/emilyb/workspace/texttest-maven-plugin/target/sandbox/ttmp.06Oct104333.13853/ttmp/install_texttests/global_install/texttest_home
 [WARNING] TEXTTEST_ROOT did not exist, creating /Users/emilyb/workspace/texttest-maven-plugin/target/sandbox/ttmp.06Oct104333.13853/ttmp/install_texttests/global_install/texttest_home
 [INFO] ------------------------------------------------------------------------

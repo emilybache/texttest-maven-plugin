@@ -26,11 +26,11 @@
 [INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ myapp ---
 [INFO] Building jar: /Users/emilyb/workspace/texttest-maven-plugin/target/sandbox/ttmp.06Oct112845.20947/ttmp/whole_lifecycle/java_tests_passing/myapp/target/myapp-1.0-SNAPSHOT.jar
 [INFO] 
-[INFO] --- texttest-maven-plugin:1.5-SNAPSHOT:install-texttests (run-texttests) @ myapp ---
+[INFO] --- texttest-maven-plugin:1.7-SNAPSHOT:install-texttests (run-texttests) @ myapp ---
 [INFO] Will install texttests globally with name myapp under TEXTTEST_ROOT /Users/emilyb/workspace/texttest-maven-plugin/target/sandbox/ttmp.06Oct112845.20947/ttmp/whole_lifecycle/java_tests_passing/texttest_home
 [WARNING] TEXTTEST_ROOT did not exist, creating /Users/emilyb/workspace/texttest-maven-plugin/target/sandbox/ttmp.06Oct112845.20947/ttmp/whole_lifecycle/java_tests_passing/texttest_home
 [INFO] 
-[INFO] --- texttest-maven-plugin:1.5-SNAPSHOT:run-texttests (run-texttests) @ myapp ---
+[INFO] --- texttest-maven-plugin:1.7-SNAPSHOT:run-texttests (run-texttests) @ myapp ---
 [INFO] found texttest on PATH at location: /usr/local/bin/texttest
 [INFO] 2014-10-06 11:29:16,128 - Using local queues for Application MyApp, checkout /Users/emilyb/workspace/texttest-maven-plugin/target/sandbox/ttmp.06Oct112845.20947/ttmp/whole_lifecycle/java_tests_passing/myapp
 [INFO] 2014-10-06 11:29:16,158 - Q: Submitting MyApp test-case hello to default local queue

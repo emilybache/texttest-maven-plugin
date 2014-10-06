@@ -22,7 +22,7 @@
                     <plugin>
                         <groupId>org.texttest</groupId>
                         <artifactId>texttest-maven-plugin</artifactId>
-                        <version>1.5-SNAPSHOT</version>
+                        <version>1.7-SNAPSHOT</version>
                         <configuration>
                             <texttestRoot>${TEXTTEST_SANDBOX}/texttest_home</texttestRoot>
                             <installGlobally>true</installGlobally>

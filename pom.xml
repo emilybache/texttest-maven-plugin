@@ -161,7 +161,7 @@
                     <plugin>
                         <groupId>org.texttest</groupId>
                         <artifactId>texttest-maven-plugin</artifactId>
-                        <version>1.4</version>
+                        <version>1.6</version>
                         <configuration>
                             <appName>ttmp</appName>
                             <installGlobally>true</installGlobally>
