@@ -6,42 +6,43 @@
 [INFO] 
 [INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ myapp ---
 [WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
-[INFO] skip non existing resourceDirectory /Users/emilyb/workspace/texttest-maven-plugin/target/sandbox/ttmp.06Oct112845.20947/ttmp/whole_lifecycle/test_classes_on_classpath/myapp/src/main/resources
+[INFO] skip non existing resourceDirectory /Users/emilyb/.texttest/tmp/ttmp.26Nov145703.33640/ttmp/whole_lifecycle/test_classes_on_classpath/myapp/src/main/resources
 [INFO] 
 [INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ myapp ---
 [INFO] No sources to compile
 [INFO] 
 [INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ myapp ---
 [WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
-[INFO] skip non existing resourceDirectory /Users/emilyb/workspace/texttest-maven-plugin/target/sandbox/ttmp.06Oct112845.20947/ttmp/whole_lifecycle/test_classes_on_classpath/myapp/src/test/resources
+[INFO] skip non existing resourceDirectory /Users/emilyb/.texttest/tmp/ttmp.26Nov145703.33640/ttmp/whole_lifecycle/test_classes_on_classpath/myapp/src/test/resources
 [INFO] 
 [INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ myapp ---
 [INFO] Changes detected - recompiling the module!
 [WARNING] File encoding has not been set, using platform encoding UTF-8, i.e. build is platform dependent!
-[INFO] Compiling 1 source file to /Users/emilyb/workspace/texttest-maven-plugin/target/sandbox/ttmp.06Oct112845.20947/ttmp/whole_lifecycle/test_classes_on_classpath/myapp/target/test-classes
+[INFO] Compiling 1 source file to /Users/emilyb/.texttest/tmp/ttmp.26Nov145703.33640/ttmp/whole_lifecycle/test_classes_on_classpath/myapp/target/test-classes
 [INFO] 
 [INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ myapp ---
 [INFO] 
 [INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ myapp ---
 [WARNING] JAR will be empty - no content was marked for inclusion!
-[INFO] Building jar: /Users/emilyb/workspace/texttest-maven-plugin/target/sandbox/ttmp.06Oct112845.20947/ttmp/whole_lifecycle/test_classes_on_classpath/myapp/target/myapp-1.0-SNAPSHOT.jar
+[INFO] Building jar: /Users/emilyb/.texttest/tmp/ttmp.26Nov145703.33640/ttmp/whole_lifecycle/test_classes_on_classpath/myapp/target/myapp-1.0-SNAPSHOT.jar
 [INFO] 
 [INFO] --- texttest-maven-plugin:1.7-SNAPSHOT:install-texttests (run-texttests) @ myapp ---
-[INFO] Will install texttests globally with name myapp under TEXTTEST_ROOT /Users/emilyb/workspace/texttest-maven-plugin/target/sandbox/ttmp.06Oct112845.20947/ttmp/whole_lifecycle/test_classes_on_classpath/texttest_home
-[WARNING] TEXTTEST_ROOT did not exist, creating /Users/emilyb/workspace/texttest-maven-plugin/target/sandbox/ttmp.06Oct112845.20947/ttmp/whole_lifecycle/test_classes_on_classpath/texttest_home
+[INFO] Will install TextTests globally with name myapp under TEXTTEST_ROOT /Users/emilyb/.texttest/tmp/ttmp.26Nov145703.33640/ttmp/whole_lifecycle/test_classes_on_classpath/texttest_home
+[WARNING] TEXTTEST_ROOT did not exist, creating /Users/emilyb/.texttest/tmp/ttmp.26Nov145703.33640/ttmp/whole_lifecycle/test_classes_on_classpath/texttest_home
+[INFO] Will add classpath to TextTest environment
 [INFO] 
 [INFO] --- texttest-maven-plugin:1.7-SNAPSHOT:run-texttests (run-texttests) @ myapp ---
 [INFO] found texttest on PATH at location: /usr/local/bin/texttest
-[INFO] 2014-10-06 11:29:16,889 - Using local queues for Application MyApp, checkout /Users/emilyb/workspace/texttest-maven-plugin/target/sandbox/ttmp.06Oct112845.20947/ttmp/whole_lifecycle/test_classes_on_classpath/myapp
-[INFO] 2014-10-06 11:29:16,935 - Q: Submitting MyApp test-case hello to default local queue
-[INFO] 2014-10-06 11:29:17,476 - S: MyApp test-case hello succeeded on Emilys-MacBook-Pro
-[INFO] 2014-10-06 11:29:17,477 - Results:
-[INFO] 2014-10-06 11:29:17,477 - 
-[INFO] 2014-10-06 11:29:17,477 - Tests Run: 1
+[INFO] 2014-11-26 14:57:33,478 - Using local queues for Application MyApp, checkout /Users/emilyb/.texttest/tmp/ttmp.26Nov145703.33640/ttmp/whole_lifecycle/test_classes_on_classpath/myapp
+[INFO] 2014-11-26 14:57:33,482 - Q: Submitting MyApp test-case hello to default local queue
+[INFO] 2014-11-26 14:57:33,891 - S: MyApp test-case hello succeeded on Emilys-MacBook-Pro
+[INFO] 2014-11-26 14:57:33,892 - Results:
+[INFO] 2014-11-26 14:57:33,892 - 
+[INFO] 2014-11-26 14:57:33,892 - Tests Run: 1
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 12.406 s
-[INFO] Finished at: 2014-10-06T11:29:17+02:00
-[INFO] Final Memory: 23M/220M
+[INFO] Total time: 10.600 s
+[INFO] Finished at: 2014-11-26T14:57:34+01:00
+[INFO] Final Memory: 23M/222M
 [INFO] ------------------------------------------------------------------------

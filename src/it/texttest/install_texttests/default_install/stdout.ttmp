@@ -5,10 +5,11 @@
 [INFO] ------------------------------------------------------------------------
 [INFO] 
 [INFO] --- texttest-maven-plugin:1.7-SNAPSHOT:install-texttests (default-cli) @ myapp ---
+[INFO] Will add classpath to TextTest environment
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 6.644s
-[INFO] Finished at: Mon Mar 10 11:26:11 CET 2014
-[INFO] Final Memory: 11M/239M
+[INFO] Total time: 7.999 s
+[INFO] Finished at: 2014-11-26T14:57:16+01:00
+[INFO] Final Memory: 14M/245M
 [INFO] ------------------------------------------------------------------------

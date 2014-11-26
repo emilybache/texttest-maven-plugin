@@ -6,16 +6,16 @@
 [INFO] 
 [INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ myapp ---
 [WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
-[INFO] skip non existing resourceDirectory /Users/emilyb/workspace/texttest-maven-plugin/target/sandbox/ttmp.06Oct112845.20947/ttmp/whole_lifecycle/java_tests_failing/myapp/src/main/resources
+[INFO] skip non existing resourceDirectory /Users/emilyb/.texttest/tmp/ttmp.26Nov145703.33640/ttmp/whole_lifecycle/java_tests_failing/myapp/src/main/resources
 [INFO] 
 [INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ myapp ---
 [INFO] Changes detected - recompiling the module!
 [WARNING] File encoding has not been set, using platform encoding UTF-8, i.e. build is platform dependent!
-[INFO] Compiling 1 source file to /Users/emilyb/workspace/texttest-maven-plugin/target/sandbox/ttmp.06Oct112845.20947/ttmp/whole_lifecycle/java_tests_failing/myapp/target/classes
+[INFO] Compiling 1 source file to /Users/emilyb/.texttest/tmp/ttmp.26Nov145703.33640/ttmp/whole_lifecycle/java_tests_failing/myapp/target/classes
 [INFO] 
 [INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ myapp ---
 [WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
-[INFO] skip non existing resourceDirectory /Users/emilyb/workspace/texttest-maven-plugin/target/sandbox/ttmp.06Oct112845.20947/ttmp/whole_lifecycle/java_tests_failing/myapp/src/test/resources
+[INFO] skip non existing resourceDirectory /Users/emilyb/.texttest/tmp/ttmp.26Nov145703.33640/ttmp/whole_lifecycle/java_tests_failing/myapp/src/test/resources
 [INFO] 
 [INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ myapp ---
 [INFO] No sources to compile
@@ -24,30 +24,31 @@
 [INFO] No tests to run.
 [INFO] 
 [INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ myapp ---
-[INFO] Building jar: /Users/emilyb/workspace/texttest-maven-plugin/target/sandbox/ttmp.06Oct112845.20947/ttmp/whole_lifecycle/java_tests_failing/myapp/target/myapp-1.0-SNAPSHOT.jar
+[INFO] Building jar: /Users/emilyb/.texttest/tmp/ttmp.26Nov145703.33640/ttmp/whole_lifecycle/java_tests_failing/myapp/target/myapp-1.0-SNAPSHOT.jar
 [INFO] 
 [INFO] --- texttest-maven-plugin:1.7-SNAPSHOT:install-texttests (install-texttests) @ myapp ---
-[INFO] Will install texttests globally with name myapp under TEXTTEST_ROOT /Users/emilyb/workspace/texttest-maven-plugin/target/sandbox/ttmp.06Oct112845.20947/ttmp/whole_lifecycle/java_tests_failing/texttest_home
-[WARNING] TEXTTEST_ROOT did not exist, creating /Users/emilyb/workspace/texttest-maven-plugin/target/sandbox/ttmp.06Oct112845.20947/ttmp/whole_lifecycle/java_tests_failing/texttest_home
+[INFO] Will install TextTests globally with name myapp under TEXTTEST_ROOT /Users/emilyb/.texttest/tmp/ttmp.26Nov145703.33640/ttmp/whole_lifecycle/java_tests_failing/texttest_home
+[WARNING] TEXTTEST_ROOT did not exist, creating /Users/emilyb/.texttest/tmp/ttmp.26Nov145703.33640/ttmp/whole_lifecycle/java_tests_failing/texttest_home
+[INFO] Will add classpath to TextTest environment
+[INFO] No dependencies found.
 [INFO] 
 [INFO] --- texttest-maven-plugin:1.7-SNAPSHOT:run-texttests (install-texttests) @ myapp ---
 [INFO] found texttest on PATH at location: /usr/local/bin/texttest
-[INFO] No dependencies found.
-[INFO] 2014-10-06 11:29:15,818 - Using local queues for Application MyApp, checkout /Users/emilyb/workspace/texttest-maven-plugin/target/sandbox/ttmp.06Oct112845.20947/ttmp/whole_lifecycle/java_tests_failing/myapp
-[INFO] 2014-10-06 11:29:15,843 - Q: Submitting MyApp test-case hello to default local queue
-[INFO] 2014-10-06 11:29:16,517 - S: MyApp test-case hello FAILED on Emilys-MacBook-Pro : differences in stdout
-[INFO] 2014-10-06 11:29:16,518 - Results:
-[INFO] 2014-10-06 11:29:16,519 - 
-[INFO] 2014-10-06 11:29:16,519 - Tests that did not succeed:
-[INFO] 2014-10-06 11:29:16,519 -   MyApp test-case hello FAILED on Emilys-MacBook-Pro : differences in stdout
-[INFO] 2014-10-06 11:29:16,519 - 
-[INFO] 2014-10-06 11:29:16,519 - Tests Run: 1, Failures: 1
+[INFO] 2014-11-26 14:57:28,740 - Using local queues for Application MyApp, checkout /Users/emilyb/.texttest/tmp/ttmp.26Nov145703.33640/ttmp/whole_lifecycle/java_tests_failing/myapp
+[INFO] 2014-11-26 14:57:28,744 - Q: Submitting MyApp test-case hello to default local queue
+[INFO] 2014-11-26 14:57:29,377 - S: MyApp test-case hello FAILED on Emilys-MacBook-Pro : differences in stdout
+[INFO] 2014-11-26 14:57:29,378 - Results:
+[INFO] 2014-11-26 14:57:29,378 - 
+[INFO] 2014-11-26 14:57:29,378 - Tests that did not succeed:
+[INFO] 2014-11-26 14:57:29,379 -   MyApp test-case hello FAILED on Emilys-MacBook-Pro : differences in stdout
+[INFO] 2014-11-26 14:57:29,379 - 
+[INFO] 2014-11-26 14:57:29,379 - Tests Run: 1, Failures: 1
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD FAILURE
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 12.602 s
-[INFO] Finished at: 2014-10-06T11:29:17+02:00
-[INFO] Final Memory: 21M/193M
+[INFO] Total time: 11.384 s
+[INFO] Finished at: 2014-11-26T14:57:30+01:00
+[INFO] Final Memory: 21M/224M
 [INFO] ------------------------------------------------------------------------
 [ERROR] Failed to execute goal org.texttest:texttest-maven-plugin:1.7-SNAPSHOT:run-texttests (install-texttests) on project myapp: There were test failures -> [Help 1]
 [ERROR] 

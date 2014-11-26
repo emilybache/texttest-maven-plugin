@@ -26,10 +26,30 @@ texttest:install-texttests
 
   Available parameters:
 
+    addClasspathToTextTestEnvironment (Default: true)
+      User property: add_classpath
+      Whether to add an environment file containing the CLASSPATH for this
+      application. If you're testing an application on the JVM this is usually
+      needed.
+      This file will be put under
+      ${project.basedir}/target/texttest_extra_config and you should add this
+      line to your config.appName:
+      
+      extra_search_directory:${TEXTTEST_CHECKOUT}/target/texttest_extra_config/
+      Note that you can change this folder by setting the
+      'extra_search_directory' property.
+
     appName (Default: ${project.artifactId})
       User property: app_name
       The short name of the texttest application under test - ie the file
       extension of the texttest config file.
+
+    extraSearchDirectory (Default: ${basedir}/target/texttest_extra_config)
+      User property: extra_search_directory
+      What folder to use for the 'extra_search_directory' setting you may have
+      in your config file This plugin will write an interpreter_options file
+      containing the CLASSPATH to this folder if you set the property
+      'add_classpath' to true.
 
     installGlobally (Default: false)
       User property: install_globally
@@ -63,19 +83,6 @@ texttest:run-texttests
 
   Available parameters:
 
-    addClasspathToTextTestEnvironment (Default: true)
-      User property: add_classpath
-      Whether to add an environment file containing the CLASSPATH for this
-      application. If you're testing an application on the JVM this is usually
-      needed.
-      This file will be put under
-      ${project.basedir}/target/texttest_extra_config and you should add this
-      line to your config.appName:
-      
-      extra_search_directory:${TEXTTEST_CHECKOUT}/target/texttest_extra_config/
-      Note that you can change this folder by setting the
-      'extra_search_directory' property.
-
     appName (Default: ${project.artifactId})
       User property: app_name
       The short name of the texttest application under test - ie the file
@@ -84,13 +91,6 @@ texttest:run-texttests
     batchSessionName (Default: all)
       User property: batch_session_name
       The name of the batch session configured in the texttest config file.
-
-    extraSearchDirectory (Default: ${basedir}/target/texttest_extra_config)
-      User property: extra_search_directory
-      What folder to use for the 'extra_search_directory' setting you may have
-      in your config file This plugin will write an interpreter_options file
-      containing the CLASSPATH to this folder if you set the property
-      'add_classpath' to true.
 
     sandbox (Default: ${project.basedir}/target/sandbox)
       User property: texttest_sandbox
@@ -134,7 +134,7 @@ texttest:run-texttests
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 4.623 s
-[INFO] Finished at: 2014-11-26T14:40:29+01:00
+[INFO] Total time: 4.572 s
+[INFO] Finished at: 2014-11-26T14:57:12+01:00
 [INFO] Final Memory: 10M/245M
 [INFO] ------------------------------------------------------------------------

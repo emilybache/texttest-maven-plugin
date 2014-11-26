@@ -1,4 +1,8 @@
 The following new files/directories were created:
 <Test Directory>
+----myapp
+--------target
+------------texttest_extra_config
+----------------interpreter_options.foobar
 ----texttest_home
 --------foobar

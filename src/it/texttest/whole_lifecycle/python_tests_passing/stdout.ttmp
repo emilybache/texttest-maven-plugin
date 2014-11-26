@@ -6,14 +6,14 @@
 [INFO] 
 [INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ myapp ---
 [WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
-[INFO] skip non existing resourceDirectory /Users/emilyb/workspace/texttest-maven-plugin/target/sandbox/ttmp.06Oct112845.20947/ttmp/whole_lifecycle/python_tests_passing/myapp/src/main/resources
+[INFO] skip non existing resourceDirectory /Users/emilyb/.texttest/tmp/ttmp.26Nov145703.33640/ttmp/whole_lifecycle/python_tests_passing/myapp/src/main/resources
 [INFO] 
 [INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ myapp ---
 [INFO] No sources to compile
 [INFO] 
 [INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ myapp ---
 [WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
-[INFO] skip non existing resourceDirectory /Users/emilyb/workspace/texttest-maven-plugin/target/sandbox/ttmp.06Oct112845.20947/ttmp/whole_lifecycle/python_tests_passing/myapp/src/test/resources
+[INFO] skip non existing resourceDirectory /Users/emilyb/.texttest/tmp/ttmp.26Nov145703.33640/ttmp/whole_lifecycle/python_tests_passing/myapp/src/test/resources
 [INFO] 
 [INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ myapp ---
 [INFO] No sources to compile
@@ -23,24 +23,24 @@
 [INFO] 
 [INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ myapp ---
 [WARNING] JAR will be empty - no content was marked for inclusion!
-[INFO] Building jar: /Users/emilyb/workspace/texttest-maven-plugin/target/sandbox/ttmp.06Oct112845.20947/ttmp/whole_lifecycle/python_tests_passing/myapp/target/myapp-1.0-SNAPSHOT.jar
+[INFO] Building jar: /Users/emilyb/.texttest/tmp/ttmp.26Nov145703.33640/ttmp/whole_lifecycle/python_tests_passing/myapp/target/myapp-1.0-SNAPSHOT.jar
 [INFO] 
 [INFO] --- texttest-maven-plugin:1.7-SNAPSHOT:install-texttests (run-texttests) @ myapp ---
-[INFO] Will install texttests globally with name myapp under TEXTTEST_ROOT /Users/emilyb/workspace/texttest-maven-plugin/target/sandbox/ttmp.06Oct112845.20947/ttmp/whole_lifecycle/python_tests_passing/texttest_home
-[WARNING] TEXTTEST_ROOT did not exist, creating /Users/emilyb/workspace/texttest-maven-plugin/target/sandbox/ttmp.06Oct112845.20947/ttmp/whole_lifecycle/python_tests_passing/texttest_home
+[INFO] Will install TextTests globally with name myapp under TEXTTEST_ROOT /Users/emilyb/.texttest/tmp/ttmp.26Nov145703.33640/ttmp/whole_lifecycle/python_tests_passing/texttest_home
+[WARNING] TEXTTEST_ROOT did not exist, creating /Users/emilyb/.texttest/tmp/ttmp.26Nov145703.33640/ttmp/whole_lifecycle/python_tests_passing/texttest_home
 [INFO] 
 [INFO] --- texttest-maven-plugin:1.7-SNAPSHOT:run-texttests (run-texttests) @ myapp ---
 [INFO] found texttest on PATH at location: /usr/local/bin/texttest
-[INFO] 2014-10-06 11:29:02,099 - Using local queues for Application MyApp, checkout /Users/emilyb/workspace/texttest-maven-plugin/target/sandbox/ttmp.06Oct112845.20947/ttmp/whole_lifecycle/python_tests_passing/myapp
-[INFO] 2014-10-06 11:29:02,145 - Q: Submitting MyApp test-case hello to default local queue
-[INFO] 2014-10-06 11:29:02,854 - S: MyApp test-case hello succeeded on Emilys-MacBook-Pro
-[INFO] 2014-10-06 11:29:02,855 - Results:
-[INFO] 2014-10-06 11:29:02,855 - 
-[INFO] 2014-10-06 11:29:02,856 - Tests Run: 1
+[INFO] 2014-11-26 14:57:27,177 - Using local queues for Application MyApp, checkout /Users/emilyb/.texttest/tmp/ttmp.26Nov145703.33640/ttmp/whole_lifecycle/python_tests_passing/myapp
+[INFO] 2014-11-26 14:57:27,183 - Q: Submitting MyApp test-case hello to default local queue
+[INFO] 2014-11-26 14:57:27,480 - S: MyApp test-case hello succeeded on Emilys-MacBook-Pro
+[INFO] 2014-11-26 14:57:27,481 - Results:
+[INFO] 2014-11-26 14:57:27,481 - 
+[INFO] 2014-11-26 14:57:27,481 - Tests Run: 1
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 11.964 s
-[INFO] Finished at: 2014-10-06T11:29:03+02:00
+[INFO] Total time: 8.400 s
+[INFO] Finished at: 2014-11-26T14:57:28+01:00
 [INFO] Final Memory: 12M/245M
 [INFO] ------------------------------------------------------------------------
