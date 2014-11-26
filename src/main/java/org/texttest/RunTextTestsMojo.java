@@ -34,6 +34,13 @@ public class RunTextTestsMojo extends AbstractTextTestMojo {
     private String batchSessionName;
 
     /**
+     * If this parameter is set to true, failing texttests will not fail the
+     * whole build.
+     */
+    @Parameter(property="test_failure_ignore", defaultValue = "false")
+    private boolean testFailureIgnore;
+
+    /**
      * Where texttest should put test result files and files relating to test runs.
      */
     @Parameter(defaultValue = "${project.basedir}/target/sandbox", property="texttest_sandbox")
@@ -171,7 +178,7 @@ public class RunTextTestsMojo extends AbstractTextTestMojo {
             Process process = textTest.start();
             new OutputLogger(process.getInputStream(), getLog()).start();
             final int exitStatus = process.waitFor();
-            if (exitStatus != 0) {
+            if (exitStatus != 0 && !testFailureIgnore) {
                 throw new MojoExecutionException("There were test failures");
             }
         } catch (IOException e) {

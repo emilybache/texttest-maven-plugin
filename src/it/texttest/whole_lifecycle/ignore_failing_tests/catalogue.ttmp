@@ -1,0 +1,20 @@
+The following new files/directories were created:
+<Test Directory>
+----myapp
+--------target
+------------myapp-1.0-SNAPSHOT.jar
+------------maven-archiver
+----------------pom.properties
+------------sandbox
+----------------myapp.06Oct112901.21166
+--------------------myapp
+------------------------hello
+----------------------------stderr.myapp
+----------------------------stdout.myapp
+----------------------------framework_tmp
+--------------------------------teststate
+--------------------slavelogs
+------------------------Test-hello-MyApp.errors
+------------------------Test-hello-MyApp.log
+----texttest_home
+--------myapp

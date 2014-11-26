@@ -97,6 +97,11 @@ texttest:run-texttests
       Where texttest should put test result files and files relating to test
       runs.
 
+    testFailureIgnore (Default: false)
+      User property: test_failure_ignore
+      If this parameter is set to true, failing texttests will not fail the
+      whole build.
+
     texttestExecutable
       User property: texttest_executable
       The preferred way is to put the 'texttest' executable on your $PATH,
@@ -129,7 +134,7 @@ texttest:run-texttests
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 4.912 s
-[INFO] Finished at: 2014-10-06T11:39:56+02:00
+[INFO] Total time: 4.623 s
+[INFO] Finished at: 2014-11-26T14:40:29+01:00
 [INFO] Final Memory: 10M/245M
 [INFO] ------------------------------------------------------------------------

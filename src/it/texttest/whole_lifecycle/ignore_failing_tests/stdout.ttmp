@@ -1,0 +1,49 @@
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Sample Project with Python tests using TextTest Plugin 1.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ myapp ---
+[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory /Users/emilyb/.texttest/tmp/ttmp.26Nov143957.30579/ttmp/whole_lifecycle/ignore_failing_tests/myapp/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ myapp ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ myapp ---
+[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory /Users/emilyb/.texttest/tmp/ttmp.26Nov143957.30579/ttmp/whole_lifecycle/ignore_failing_tests/myapp/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ myapp ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ myapp ---
+[INFO] No tests to run.
+[INFO] 
+[INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ myapp ---
+[WARNING] JAR will be empty - no content was marked for inclusion!
+[INFO] Building jar: /Users/emilyb/.texttest/tmp/ttmp.26Nov143957.30579/ttmp/whole_lifecycle/ignore_failing_tests/myapp/target/myapp-1.0-SNAPSHOT.jar
+[INFO] 
+[INFO] --- texttest-maven-plugin:1.7-SNAPSHOT:install-texttests (run-texttests) @ myapp ---
+[INFO] Will install texttests globally with name myapp under TEXTTEST_ROOT /Users/emilyb/.texttest/tmp/ttmp.26Nov143957.30579/ttmp/whole_lifecycle/ignore_failing_tests/texttest_home
+[WARNING] TEXTTEST_ROOT did not exist, creating /Users/emilyb/.texttest/tmp/ttmp.26Nov143957.30579/ttmp/whole_lifecycle/ignore_failing_tests/texttest_home
+[INFO] 
+[INFO] --- texttest-maven-plugin:1.7-SNAPSHOT:run-texttests (run-texttests) @ myapp ---
+[INFO] found texttest on PATH at location: /usr/local/bin/texttest
+[INFO] 2014-11-26 14:40:01,574 - Using local queues for Application MyApp, checkout /Users/emilyb/.texttest/tmp/ttmp.26Nov143957.30579/ttmp/whole_lifecycle/ignore_failing_tests/myapp
+[INFO] 2014-11-26 14:40:01,577 - Q: Submitting MyApp test-case hello to default local queue
+[INFO] 2014-11-26 14:40:01,750 - S: MyApp test-case hello FAILED on Emilys-MacBook-Pro : differences in stdout
+[INFO] 2014-11-26 14:40:01,751 - Results:
+[INFO] 2014-11-26 14:40:01,751 - 
+[INFO] 2014-11-26 14:40:01,751 - Tests that did not succeed:
+[INFO] 2014-11-26 14:40:01,751 -   MyApp test-case hello FAILED on Emilys-MacBook-Pro : differences in stdout
+[INFO] 2014-11-26 14:40:01,751 - 
+[INFO] 2014-11-26 14:40:01,751 - Tests Run: 1, Failures: 1
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 2.762 s
+[INFO] Finished at: 2014-11-26T14:40:02+01:00
+[INFO] Final Memory: 13M/309M
+[INFO] ------------------------------------------------------------------------
