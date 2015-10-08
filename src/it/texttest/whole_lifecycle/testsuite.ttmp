@@ -21,3 +21,9 @@ using_capturemock
 
 # The main class is on the tests classpath not the main classpath - should still work
 test_classes_on_classpath
+
+# only run one of two available test suites
+select_a_testsuite
+
+# only run one of two available test suites
+select_a_testname

@@ -102,6 +102,22 @@ texttest:run-texttests
       If this parameter is set to true, failing texttests will not fail the
       whole build.
 
+    testNameSelection
+      User property: test_name_selection
+      If you only want to run a selection of the tests, with test names that
+      match a certain string, you can use this parameter. The settings
+      'testPathSelection' and 'testNameSelection' correspond to the command
+      line options '-ts' and '-t' respectively. See also
+      http://texttest.sourceforge.net/index.php?page=documentation_3_26&n=static_gui#-ts
+
+    testPathSelection
+      User property: test_path_selection
+      If you only want to run a selection of the tests, with test suites that
+      match a certain string, you can use this parameter. The settings
+      'testPathSelection' and 'testNameSelection' correspond to the command
+      line options '-ts' and '-t' respectively. See also
+      http://texttest.sourceforge.net/index.php?page=documentation_3_26&n=static_gui#-ts
+
     texttestExecutable
       User property: texttest_executable
       The preferred way is to put the 'texttest' executable on your $PATH,
@@ -134,7 +150,7 @@ texttest:run-texttests
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 4.572 s
-[INFO] Finished at: 2014-11-26T14:57:12+01:00
+[INFO] Total time: 1.376 s
+[INFO] Finished at: 2015-10-08T11:45:11+02:00
 [INFO] Final Memory: 10M/245M
 [INFO] ------------------------------------------------------------------------

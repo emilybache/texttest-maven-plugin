@@ -13,6 +13,7 @@ import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
@@ -60,6 +61,21 @@ public class RunTextTestsMojo extends AbstractTextTestMojo {
     @Parameter(property="texttest_executable")
     String texttestExecutable;
 
+    /**
+     * If you only want to run a selection of the tests, with test suites that match a certain string, you can use this parameter.
+     * The settings 'testPathSelection' and 'testNameSelection'
+     * correspond to the command line options '-ts' and '-t' respectively. See also http://texttest.sourceforge.net/index.php?page=documentation_3_26&n=static_gui#-ts
+     */
+    @Parameter(property="test_path_selection")
+    String testPathSelection;
+
+    /**
+     * If you only want to run a selection of the tests, with test names that match a certain string, you can use this parameter.
+     * The settings 'testPathSelection' and 'testNameSelection'
+     * correspond to the command line options '-ts' and '-t' respectively. See also http://texttest.sourceforge.net/index.php?page=documentation_3_26&n=static_gui#-ts
+     */
+    @Parameter(property="test_name_selection")
+    String testNameSelection;
 
     @Override
     public void execute() throws MojoExecutionException, MojoFailureException {
@@ -98,14 +114,21 @@ public class RunTextTestsMojo extends AbstractTextTestMojo {
     }
 
     void runTextTest(Path textTestExecutable) throws MojoExecutionException {
-        String[] arguments = new String[]{
+        ArrayList<String> arguments = new ArrayList<String>();
+        arguments.addAll(Arrays.asList(
                 textTestExecutable.toString(),
                 "-a", appName,
                 "-b", batchSessionName,
                 "-c", mavenProject.getBasedir().toString(),
                 "-d", texttestLocation + System.getProperty("path.separator") + getTexttestRootPath().toString()
-        };
-        getLog().debug("Will start texttest with this command: " + Arrays.toString(arguments));
+        ));
+        if (testPathSelection != null) {
+            arguments.addAll(Arrays.asList("-ts", testPathSelection));
+        }
+        if (testNameSelection != null) {
+            arguments.addAll(Arrays.asList("-t", testNameSelection));
+        }
+        getLog().debug("Will start texttest with this command: " + arguments);
         ProcessBuilder textTest = new ProcessBuilder(arguments);
 
         textTest.environment().put("TEXTTEST_TMP", sandbox);
