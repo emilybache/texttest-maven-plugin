@@ -25,11 +25,11 @@
 [WARNING] JAR will be empty - no content was marked for inclusion!
 [INFO] Building jar: /Users/emilyb/.texttest/tmp/ttmp.26Nov145703.33640/ttmp/whole_lifecycle/using_capturemock/myapp/target/myapp-1.0-SNAPSHOT.jar
 [INFO] 
-[INFO] --- texttest-maven-plugin:1.8-SNAPSHOT:install-texttests (run-texttests) @ myapp ---
+[INFO] --- texttest-maven-plugin:1.9-SNAPSHOT:install-texttests (run-texttests) @ myapp ---
 [INFO] Will install TextTests globally with name myapp under TEXTTEST_ROOT /Users/emilyb/.texttest/tmp/ttmp.26Nov145703.33640/ttmp/whole_lifecycle/using_capturemock/texttest_home
 [WARNING] TEXTTEST_ROOT did not exist, creating /Users/emilyb/.texttest/tmp/ttmp.26Nov145703.33640/ttmp/whole_lifecycle/using_capturemock/texttest_home
 [INFO] 
-[INFO] --- texttest-maven-plugin:1.8-SNAPSHOT:run-texttests (run-texttests) @ myapp ---
+[INFO] --- texttest-maven-plugin:1.9-SNAPSHOT:run-texttests (run-texttests) @ myapp ---
 [INFO] found texttest on PATH at location: /usr/local/bin/texttest
 [INFO] 2014-11-26 14:57:30,549 - Using local queues for Application MyApp, checkout /Users/emilyb/.texttest/tmp/ttmp.26Nov145703.33640/ttmp/whole_lifecycle/using_capturemock/myapp
 [INFO] 2014-11-26 14:57:30,557 - Q: Submitting MyApp test-case hello to default local queue

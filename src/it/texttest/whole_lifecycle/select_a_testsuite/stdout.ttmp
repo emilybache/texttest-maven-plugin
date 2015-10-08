@@ -25,11 +25,11 @@
 [WARNING] JAR will be empty - no content was marked for inclusion!
 [INFO] Building jar: /Users/emilyb/.texttest/tmp/ttmp.08Oct114032.67195/ttmp/whole_lifecycle/select_a_testsuite/myapp/target/myapp-1.0-SNAPSHOT.jar
 [INFO] 
-[INFO] --- texttest-maven-plugin:1.8-SNAPSHOT:install-texttests (run-texttests) @ myapp ---
+[INFO] --- texttest-maven-plugin:1.9-SNAPSHOT:install-texttests (run-texttests) @ myapp ---
 [INFO] Will install TextTests globally with name myapp under TEXTTEST_ROOT /Users/emilyb/.texttest/tmp/ttmp.08Oct114032.67195/ttmp/whole_lifecycle/select_a_testsuite/texttest_home
 [WARNING] TEXTTEST_ROOT did not exist, creating /Users/emilyb/.texttest/tmp/ttmp.08Oct114032.67195/ttmp/whole_lifecycle/select_a_testsuite/texttest_home
 [INFO] 
-[INFO] --- texttest-maven-plugin:1.8-SNAPSHOT:run-texttests (run-texttests) @ myapp ---
+[INFO] --- texttest-maven-plugin:1.9-SNAPSHOT:run-texttests (run-texttests) @ myapp ---
 [INFO] found texttest on PATH at location: /usr/local/bin/texttest
 [INFO] 2015-10-08 11:40:37,658 - Using local queues for Application MyApp, checkout /Users/emilyb/.texttest/tmp/ttmp.08Oct114032.67195/ttmp/whole_lifecycle/select_a_testsuite/myapp
 [INFO] 2015-10-08 11:40:37,661 - Q: Submitting MyApp test-case goodbye to default local queue

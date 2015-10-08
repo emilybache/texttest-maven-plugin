@@ -5,13 +5,13 @@
 [INFO] ------------------------------------------------------------------------
 [INFO] 
 [INFO] --- maven-help-plugin:2.2:describe (default-cli) @ myapp ---
-[INFO] org.texttest:texttest-maven-plugin:1.8-SNAPSHOT
+[INFO] org.texttest:texttest-maven-plugin:1.9-SNAPSHOT
 
 Name: TextTest Maven Plugin
 Description: This maven plugin lets you run tests created with TextTest
 Group Id: org.texttest
 Artifact Id: texttest-maven-plugin
-Version: 1.8-SNAPSHOT
+Version: 1.9-SNAPSHOT
 Goal Prefix: texttest
 
 This plugin has 2 goals:
